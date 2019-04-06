@@ -22,7 +22,78 @@
       </nav>
     </header>
     <main class="page-main">
-
+      <h1 class="page-main__header">Вязание на заказ</h1>
+      <section class="order-knitting">
+        <h2 class="visually-hidden">Заказать вязание</h2>
+        <p class="order-knitting__text">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
+            чтобы уточнить детали.
+        </p>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-legend">тип</legend>
+            <input class="visually-hidden" type="radio" name="knitting-type" value="interior"
+              id="knitting-type-interior" checked>
+            <label class="order-knitting__type-label" for="knitting-type-interior">Аксессуар для интерьера</label>
+            <input class="visually-hidden" type="radio" name="knitting-type" value="toy" id="knitting-type-toy">
+            <label class="order-knitting__type-label" for="knitting-type-toy">Детская игрушка</label>
+          </fieldset>
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-legend">цвет</legend>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="white"
+              id="knitting-color-white" checked>
+            <label class="order-knitting__color-label" for="knitting-color-white">Белый</label>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="grey"
+              id="knitting-color-grey" checked>
+            <label class="order-knitting__color-label" for="knitting-color-grey">Серый</label>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="tiffany"
+              id="knitting-color-tiffany">
+            <label class="order-knitting__color-label" for="knitting-color-tiffany">«Тиффани»</label>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="black"
+              id="knitting-color-black">
+            <label class="order-knitting__color-label" for="knitting-color-black">Черный</label>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="pink"
+              id="knitting-color-pink">
+            <label class="order-knitting__color-label" for="knitting-color-pink">Розовый</label>
+            <input class="visually-hidden" type="checkbox" name="knitting-color" value="orange"
+              id="knitting-color-orange">
+            <label class="order-knitting__color-label" for="knitting-color-orange">Оранжевый</label>
+          </fieldset>
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-legend">фио</legend>
+            <label>Имя:
+              <input class="order-knitting__first-name-field text-field" placeholder="Введите ваше имя*"
+                type="text" name="first-name" required>
+            </label>
+            <label>Фамилия:
+              <input class="order-knitting__second-name-field text-field" placeholder="Укажите фамилию*"
+                type="text" name="second-name" required>
+            </label>
+            <label>Отчество:
+              <input class="order-knitting__middle-name-field text-field" placeholder="Отчество, если желаете"
+                type="text" name="middle-name">
+            </label>
+          </fieldset>
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-phone">тел</legend>
+            <input class="order-knitting__first-phone-field text-field" placeholder="+7 XXX XXX XX XX*"
+              type="tel" name="phone" aria-label="номер телефона" required>
+          </fieldset>
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-legend">e-mail</legend>
+            <input class="order-knitting__first-email-field text-field" placeholder="Ваш Email*"
+              type="email" name="email" aria-label="Адрес электронной почты" required>
+          </fieldset>
+          <fieldset class="order-knitting__fieldset">
+            <legend class="order-knitting__fieldset-legend">доп</legend>
+            <textarea class="order-knitting__first-addon-field text-area"
+              placeholder="Опишите все ваши пожелания к заказу" name="addon"
+              aria-label="Дополнительная информация"></textarea>
+          </fieldset>
+          <p class="order-knitting__requied">*Поля обязательны для заполнения</p>
+          <button class="order-knitting__place-order button" type="submit">отправить заказ</button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social social">
