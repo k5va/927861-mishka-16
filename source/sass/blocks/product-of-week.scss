@@ -1,3 +1,7 @@
+.product-of-week {
+padding-left: 30px;
+}
+
 .product-of-week__header {
   font-family: $bold-font;
   font-size: 17px;
@@ -15,4 +19,28 @@
   font-weight: bold;
   font-style: normal;
   color: #000;
+}
+
+.product-of-week__description {
+  margin-bottom: 33px;
+}
+
+.product-of-week__params-list {
+  line-height: 1.33;
+  margin-bottom: 28px;
+}
+
+.product-of-week__image {
+  margin-bottom: 28px;
+}
+
+.product-of-week__price {
+  font-family: $bold-font;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: bold;
+  font-style: normal;
+  color: #444444;
+
+  margin: 0 0 28px 0;
 }
