@@ -1,0 +1,35 @@
+.testimonials {
+  /*TODO: place padding to wrapper MIX*/
+  padding-left: 30px;
+  margin-bottom: 44px;
+}
+
+.testimonials__wrapper {
+  margin-bottom: 38px;
+}
+
+.testimonials__header {
+  font-family: $bold-font;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+  color: #000;
+
+  margin: 0 0 38px 0;
+}
+
+.testimonials__list {
+  margin-bottom: 36px;
+}
+
+.testimonials__text {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2;
+
+  margin: 0 0 40px 0;
+}
+
+
