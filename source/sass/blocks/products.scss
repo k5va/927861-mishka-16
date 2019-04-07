@@ -1,0 +1,22 @@
+.products {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.products__description {
+  font-family: $bold-font;
+  font-size: 26.5px;
+  line-height: 1.11;
+  font-weight: bold;
+  font-style: normal;
+  color: #010000;
+  text-align: center;
+
+  width: 322px;
+}
+
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
