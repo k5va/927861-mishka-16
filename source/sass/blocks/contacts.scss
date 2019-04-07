@@ -1,0 +1,32 @@
+.contacts {
+  padding-left: 30px;
+  margin-bottom: 39px;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contacts__header {
+  font-family: $bold-font;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.67;
+  color: #000;
+
+  margin: 42px 0 39px 0;
+}
+
+.contacts__info {
+  margin-bottom: 42px;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+}
+
+.contacts__write-us {
+  align-self: flex-start;
+}
+
+
