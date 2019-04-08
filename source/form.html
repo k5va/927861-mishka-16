@@ -38,35 +38,66 @@
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
             чтобы уточнить детали.
         </p>
-        <form method="POST" action="https://echo.htmlacademy.ru">
+        <form class="order-knitting__form form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="order-knitting__fieldset">
             <legend class="order-knitting__fieldset-legend">тип</legend>
-            <input class="visually-hidden" type="radio" name="knitting-type" value="interior"
-              id="knitting-type-interior" checked>
-            <label class="order-knitting__type-label" for="knitting-type-interior">Аксессуар для интерьера</label>
-            <input class="visually-hidden" type="radio" name="knitting-type" value="toy" id="knitting-type-toy">
-            <label class="order-knitting__type-label" for="knitting-type-toy">Детская игрушка</label>
+            <ul class="order-knitting__fields-list">
+              <li class="order-knitting__fields-item">
+                <input class="form__radio visually-hidden" type="radio"
+                  name="knitting-type" value="interior" id="knitting-type-interior" checked>
+                <label class="order-knitting__type-label form__radio-label"
+                  for="knitting-type-interior">Аксессуар для интерьера
+                </label>
+              </li>
+              <li class="order-knitting__fields-item">
+                <input class="form__radio visually-hidden" type="radio"
+                  name="knitting-type" value="toy" id="knitting-type-toy">
+                <label class="order-knitting__type-label form__radio-label"
+                  for="knitting-type-toy">Детская игрушка
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="order-knitting__fieldset">
             <legend class="order-knitting__fieldset-legend">цвет</legend>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="white"
-              id="knitting-color-white" checked>
-            <label class="order-knitting__color-label" for="knitting-color-white">Белый</label>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="grey"
-              id="knitting-color-grey" checked>
-            <label class="order-knitting__color-label" for="knitting-color-grey">Серый</label>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="tiffany"
-              id="knitting-color-tiffany">
-            <label class="order-knitting__color-label" for="knitting-color-tiffany">«Тиффани»</label>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="black"
-              id="knitting-color-black">
-            <label class="order-knitting__color-label" for="knitting-color-black">Черный</label>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="pink"
-              id="knitting-color-pink">
-            <label class="order-knitting__color-label" for="knitting-color-pink">Розовый</label>
-            <input class="visually-hidden" type="checkbox" name="knitting-color" value="orange"
-              id="knitting-color-orange">
-            <label class="order-knitting__color-label" for="knitting-color-orange">Оранжевый</label>
+            <ul class="order-knitting__fields-list">
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="white"
+                  id="knitting-color-white" checked>
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-white">Белый</label>
+              </li>
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="grey"
+                  id="knitting-color-grey" checked>
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-grey">Серый</label>
+              </li class="order-knitting__fields-item">
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="tiffany"
+                  id="knitting-color-tiffany">
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-tiffany">«Тиффани»</label>
+              </li>
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="black"
+                  id="knitting-color-black">
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-black">Черный</label>
+              </li>
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="pink"
+                  id="knitting-color-pink">
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-pink">Розовый</label>
+              </li>
+              <li class="order-knitting__fields-item">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="knitting-color" value="orange"
+                  id="knitting-color-orange">
+                <label class="form__checkbox-label order-knitting__color-label"
+                  for="knitting-color-orange">Оранжевый</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="order-knitting__fieldset">
             <legend class="order-knitting__fieldset-legend">фио</legend>
@@ -84,7 +115,7 @@
             </label>
           </fieldset>
           <fieldset class="order-knitting__fieldset">
-            <legend class="order-knitting__fieldset-phone">тел</legend>
+            <legend class="order-knitting__fieldset-legend">тел</legend>
             <input class="order-knitting__first-phone-field text-field" placeholder="+7 XXX XXX XX XX*"
               type="tel" name="phone" aria-label="номер телефона" required>
           </fieldset>
@@ -99,7 +130,7 @@
               placeholder="Опишите все ваши пожелания к заказу" name="addon"
               aria-label="Дополнительная информация"></textarea>
           </fieldset>
-          <p class="order-knitting__requied">*Поля обязательны для заполнения</p>
+          <p class="order-knitting__requied"><sup>*</sup>Поля обязательны для заполнения</p>
           <button class="order-knitting__place-order button" type="submit">отправить заказ</button>
         </form>
       </section>
