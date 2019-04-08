@@ -1,0 +1,38 @@
+.production-process {
+  border: 1px solid #ececec;
+
+  margin-bottom: 58px;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.production-process__header {
+  font-family: $bold-font;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.41;
+  color: #000000;
+
+  margin: 0 0 26px 0;
+}
+
+.production-process__video {
+  margin: 0 0 34px 0;
+}
+
+.production-process__text {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.85;
+
+  margin: 0 0 29px 0;
+}
+
+.production-process__place-order {
+  margin: 0 0 33px 0;
+
+  align-self: flex-start;
+}
