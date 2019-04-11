@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
   display: flex;
   flex-flow: row wrap;
@@ -33,6 +37,10 @@
     justify-content: space-between;
 
     width: $tablet-width - 2 * 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
   }
 }
 
