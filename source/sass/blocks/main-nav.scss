@@ -20,6 +20,11 @@
   border-bottom: 1px solid #ececec;
 }
 
+.main-nav__list-item--new,
+.main-nav__list-item--sale {
+  display: none;
+}
+
 .main-nav__list-link {
   color: #000000;
 
@@ -62,10 +67,16 @@
 
   .main-nav__list--site {
     order: -1;
-    width: auto;
+    width: 380px;
+    flex-flow: row wrap;
   }
 
   .main-nav__list--user {
     margin-left: 0;
+  }
+
+  .main-nav__list-item--new,
+  .main-nav__list-item--sale {
+    display: block;
   }
 }
