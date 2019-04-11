@@ -1,6 +1,6 @@
 .about-us {
   margin-bottom: 61px;
-  padding-left: 30px;
+  padding: 0 30px;
 }
 
 .about-us__header {
@@ -25,12 +25,34 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .about-us__item {
   margin-bottom: 85px;
+  width: 300px;
 }
 
 .about-us__item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 0;
+  }
+
+  .about-us__list {
+    height: 420px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .about-us__list,
+  .about-us__header {
+    margin-left: 175px;
+  }
 }
