@@ -1,5 +1,5 @@
 .contacts {
-  padding-left: 30px;
+  padding: 0 30px;
   margin-bottom: 39px;
 
   display: flex;
@@ -28,3 +28,14 @@
 .contacts__write-us {
   align-self: flex-start;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
+
