@@ -1,10 +1,10 @@
 .testimonials {
   /*TODO: place padding to wrapper MIX*/
-  padding-left: 30px;
+  padding: 0 30px;
   margin-bottom: 44px;
 }
 
-.testimonials__wrapper {
+.testimonials__slider-controls {
   margin-bottom: 38px;
 }
 
@@ -31,3 +31,37 @@
 
   margin: 0 0 40px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .testimonials {
+    padding: 0;
+
+    position: relative;
+  }
+
+  .testimonials__write {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+  }
+
+  .testimonials__slider-controls {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .testimonials__header,
+  .testimonials__list {
+    margin-left: 175px;
+  }
+
+  .testimonials__list {
+    width: 700px;
+  }
+}
+
