@@ -1,8 +1,25 @@
 .page-header {
-  display: flex;
-  flex-flow: column nowrap;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .page-header__logo {
-  align-self: center;
+  text-align: center;
+
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
 }
