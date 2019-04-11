@@ -1,8 +1,11 @@
 .production-process {
   border: 1px solid #ececec;
+  margin: 0 30px 58px 30px;
 
-  margin-bottom: 58px;
+  position: relative;
+}
 
+.production-process__wrapper {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -35,4 +38,28 @@
   margin: 0 0 33px 0;
 
   align-self: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process {
+    margin: 0 0 58px 0;
+  }
+
+  .production-process__video {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production-process__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .production-process__wrapper {
+    margin-left: 700px;
+    /*TODO: temp height*/
+    height: 455px;
+  }
 }
