@@ -1,9 +1,14 @@
 .page-footer {
   background-color: #f1f1f1;
+}
 
+.page-footer__wrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  width: $mobile-width - 2 * 30px;
+  margin: 0 auto;
 }
 
 .page-footer__social {
@@ -19,4 +24,22 @@
 
 .page-footer__copyright {
   margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: $tablet-width - 2 * 50px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width - 2 * 50px;
+  }
+
 }
