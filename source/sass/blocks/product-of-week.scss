@@ -1,5 +1,5 @@
 .product-of-week {
-  padding-left: 30px;
+  padding: 0 30px;
   margin-bottom: 34px;
 }
 
@@ -43,4 +43,38 @@
   color: #444444;
 
   margin: 0 0 28px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-of-week {
+    padding: 0;
+    position: relative;
+  }
+
+  .product-of-week__header {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+
+  .product-of-week__wrapper {
+    width: 334px;
+  }
+
+  .product-of-week__image {
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-of-week__wrapper {
+    margin-left: 175px;
+  }
+
+  .product-of-week__header {
+    top: 15px;
+    left: 10px;
+  }
 }

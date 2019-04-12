@@ -1,7 +1,9 @@
 .products {
+  background-color: #fbfbfb;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .products__description {
@@ -22,6 +24,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .products__item-link {
@@ -44,4 +49,14 @@
 
 .products__item-link--toys {
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .products__item {
+    width: 50%;
+  }
+
+  .products__list {
+    flex-flow: row wrap;
+  }
 }

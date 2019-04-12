@@ -3,24 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <!-- TODO: add normalizer. Add meta viewport -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35"
-          width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
+        <!-- TODO: change class name? -->
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35"
+            width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
+        <ul class="main-nav__list main-nav__list--site site-list">
           <li class="main-nav__list-item site-list__item">
             <a class="main-nav__list-link site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__list-item site-list__item">
-            <a class="main-nav__list-link site-list__link" href="#">Вязание на заказ</a>
+            <a class="main-nav__list-link site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--new site-list__item">
+            <a class="main-nav__list-link site-list__link" href="№">Новые поступления</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--sale site-list__item">
+            <a class="main-nav__list-link site-list__link" href="№">Распродажа</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__list main-nav__list--user user-list">
           <li class="main-nav__list-item user-list__item user-list__item--search">
             <a class="main-nav__list-link user-list__link" href="#">Поиск по сайту</a>
           </li>
@@ -45,29 +53,31 @@
         </ul>
       </section>
       <section class="product-of-week">
-        <h2 class="product-of-week__header">товар недели</h2>
-        <p class="product-of-week__name">Вязаные корзинки</p>
-        <p class="product-of-week__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="product-of-week__params-list">
-          <tr>
-            <td class="product-of-week__params-field">Цвет:</td>
-            <td class="product-of-week__params-value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="product-of-week__params-field">Диаметр:</td>
-            <td class="product-of-week__params-value">25 см</td>
-          </tr>
-          <tr>
-            <td class="product-of-week__params-field">Высота:</td>
-            <td class="product-of-week__params-value">15 см</td>
-          </tr>
-        </table>
-        <img class="product-of-week__image" src="../img/triple-set-mobile@1x.jpg"
-          width="260" height="315" alt="Вязаная корзинка">
-        <p class="product-of-week__price">Цена: 990 руб.</p>
-        <a class="product-of-week__order-button button" href="#">Заказать</a>
+        <div class="product-of-week__wrapper">
+          <h2 class="product-of-week__header">товар недели</h2>
+          <p class="product-of-week__name">Вязаные корзинки</p>
+          <p class="product-of-week__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="product-of-week__params-list">
+            <tr>
+              <td class="product-of-week__params-field">Цвет:</td>
+              <td class="product-of-week__params-value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="product-of-week__params-field">Диаметр:</td>
+              <td class="product-of-week__params-value">25 см</td>
+            </tr>
+            <tr>
+              <td class="product-of-week__params-field">Высота:</td>
+              <td class="product-of-week__params-value">15 см</td>
+            </tr>
+          </table>
+          <img class="product-of-week__image" src="../img/triple-set-mobile@1x.jpg"
+            width="260" height="315" alt="Вязаная корзинка">
+          <p class="product-of-week__price">Цена: 990 руб.</p>
+          <a class="product-of-week__order-button button" href="#">Заказать</a>
+        </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__header">Коротко о нас:</h2>
@@ -82,20 +92,20 @@
       </section>
       <section class="testimonials">
         <h2 class="testimonials__header">Отзывы</h2>
-        <div class="testimonials__wrapper slider">
-          <ul class="testimonials__list slider__list">
-            <li class="slider__item">
-              <blockquote class="testimonials__text" cite="https://www.instagram.com/misssssiskras">
-                <p>
-                  Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                  как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-                </p>
-              </blockquote>
-              <cite class="testimonials__author-name">Анастасия Красильникова</cite>
-              <a class="testimonials__author-link" href="https://www.instagram.com/misssssiskras">@misssssiskras</a>
-            </li>
-          </ul>
+        <ul class="testimonials__list slider__list">
+          <li class="slider__item">
+            <blockquote class="testimonials__text" cite="https://www.instagram.com/misssssiskras">
+              <p>
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+            </blockquote>
+            <cite class="testimonials__author-name">Анастасия Красильникова</cite>
+            <a class="testimonials__author-link" href="https://www.instagram.com/misssssiskras">@misssssiskras</a>
+          </li>
+        </ul>
+        <div class="testimonials__slider-controls">
           <button class="testimonials__prev slider__prev" type="button" aria-label="Предыдущий">
             <img class="slider__prev-image" aria-hidden="true" src="http://placehold.it/50x26"
               width="50" height="26" alt="Предыдущий">
@@ -131,31 +141,37 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="page-footer__social-item social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-            aria-label="Мы в Инстаграме">
-            <img src="http://placehold.it/22x21" width="22" height="21" alt="Инстаграм">
-          </a>
-        </li>
-        <li class="page-footer__social-item social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-            aria-label="Мы в Фейсбуке">
-            <img src="http://placehold.it/15x28" width="15" height="28" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="page-footer__social-item social__item">
-          <a class="social__link social__link--twitter" href="https://www.instagram.com/htmlacademy"
-            aria-label="Мы в Твиттере">
-            <img src="http://placehold.it/23x40" width="23" height="40" alt="Твиттер">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="http://placehold.it/102x34"
+            width="102" height="34" alt="Интернет-магазин «Мишка»">
         </a>
+        <ul class="page-footer__social social">
+          <li class="page-footer__social-item social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+              aria-label="Мы в Инстаграме">
+              <img src="http://placehold.it/22x21" width="22" height="21" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="page-footer__social-item social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              aria-label="Мы в Фейсбуке">
+              <img src="http://placehold.it/15x28" width="15" height="28" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="page-footer__social-item social__item">
+            <a class="social__link social__link--twitter" href="https://www.instagram.com/htmlacademy"
+              aria-label="Мы в Твиттере">
+              <img src="http://placehold.it/23x40" width="23" height="40" alt="Твиттер">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
