@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 61px;
+  margin-bottom: 55px;
   padding: 0 30px;
 }
 
@@ -11,7 +11,7 @@
   line-height: 1.2;
   color: #000000;
 
-  margin: 0 0 88px 0;
+  margin: 34px 0 88px 0;
 }
 
 .about-us__list {
@@ -31,8 +31,22 @@
 }
 
 .about-us__item {
-  margin-bottom: 85px;
-  width: 300px;
+  margin-bottom: 83px;
+  //width: 300px;
+}
+
+.about-us__item--eco-clean {
+  width: 195px;
+}
+
+.about-us__item--price,
+.about-us__item--likes,
+.about-us__item--package {
+  width: 200px;
+}
+
+.about-us__item--hand-made {
+  width: 210px;
 }
 
 .about-us__item:last-child {
