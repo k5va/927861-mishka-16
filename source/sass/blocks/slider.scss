@@ -3,3 +3,16 @@
   margin: 0;
   padding: 0;
 }
+
+.slider-controls {
+  display: flex;
+}
+
+.slider__prev,
+.slider__next {
+  background-color: transparent;
+  border: 1px solid #ececec;
+
+  height: 52px;
+  width: 130px;
+}
