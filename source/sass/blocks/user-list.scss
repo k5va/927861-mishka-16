@@ -29,3 +29,27 @@
     left: calc(50% - 128px);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .user-list__item {
+    border-left: 1px solid #d3d2d2;
+  }
+
+  .user-list__link {
+    padding: 31px 0 34px 85px;
+  }
+
+  .user-list__item--cart {
+    &::before {
+      top: 33px;
+      left: 31px;
+    }
+  }
+
+  .user-list__item--search {
+    &::before {
+      top: 36px;
+      left: 35px;
+    }
+  }
+}

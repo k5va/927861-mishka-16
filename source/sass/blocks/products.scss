@@ -51,6 +51,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .products {
+    margin-top: -71px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: top left 50%;
+  }
+
   .products__item {
     width: 50%;
   }
