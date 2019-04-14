@@ -10,7 +10,7 @@
   font-style: normal;
   line-height: 1.2;
   color: #000000;
-
+  /*TODO: Why margin-top here?*/
   margin: 34px 0 88px 0;
 }
 
@@ -33,6 +33,49 @@
 .about-us__item {
   margin-bottom: 83px;
   //width: 300px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -55px;
+    left: 11px;
+  }
+}
+
+.about-us__item--eco-clean {
+  &::before {
+    content: url("../img/icon-feature-flower.svg");
+  }
+}
+
+.about-us__item--price {
+  &::before {
+    content: url("../img/icon-feature-money.svg");
+  }
+}
+
+.about-us__item--likes {
+  &::before {
+    content: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.about-us__item--hand-made {
+  &::before {
+    content: url("../img/icon-feature-ball.svg");
+  }
+}
+
+.about-us__item--local-support {
+  &::before {
+    content: url("../img/icon-feature-rocket.svg");
+  }
+}
+
+.about-us__item--package {
+  &::before {
+    content: url("../img/icon-feature-gift.svg");
+  }
 }
 
 .about-us__item--eco-clean {
@@ -59,7 +102,45 @@
   }
 
   .about-us__list {
-    height: 420px;
+    font-size: 20px;
+    line-height: 1.1;
+    /*TODO: data overflow?*/
+    height: 462px;
+  }
+
+  .about-us__header {
+    font-size: 43px;
+    line-height: 1.16;
+    /*TODO: why margin-top was here?*/
+    margin-top: 0;
+    margin-bottom: 105px;
+  }
+  .about-us__item {
+    margin-right: 100px;
+    margin-bottom: 110px;
+  }
+
+  .about-us__item--eco-clean {
+    width: 230px;
+  }
+
+  .about-us__item--price {
+    width: 235px;
+  }
+
+  .about-us__item--likes {
+    width: 220px;
+  }
+
+  .about-us__item--hand-made {
+    width: 255px;
+  }
+
+  .about-us__item--local-support {
+    width: 295px;
+  }
+  .about-us__item--package {
+    width: 235px;
   }
 }
 
