@@ -1,6 +1,6 @@
 .testimonials {
   /*TODO: place padding to wrapper MIX*/
-  padding: 0 30px;
+  //padding: 0 30px;
   margin-bottom: 44px;
 
   display: flex;
@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .testimonials {
-    padding: 0;
+    //padding: 0;
 
     position: relative;
   }
