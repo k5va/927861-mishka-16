@@ -35,6 +35,10 @@
   //width: 300px;
   position: relative;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::before {
     position: absolute;
     top: -55px;
@@ -92,20 +96,16 @@
   width: 210px;
 }
 
-.about-us__item:last-child {
-  margin-bottom: 0;
-}
-
 @media (min-width: $tablet-width) {
   .about-us {
-    //padding: 0;
+    margin-bottom: 76px;
   }
 
   .about-us__list {
     font-size: 20px;
     line-height: 1.1;
     /*TODO: data overflow?*/
-    height: 462px;
+    height: 360px;
   }
 
   .about-us__header {
@@ -115,9 +115,14 @@
     margin-top: 0;
     margin-bottom: 105px;
   }
+
   .about-us__item {
     margin-right: 100px;
     margin-bottom: 110px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
   }
 
   .about-us__item--eco-clean {
