@@ -36,12 +36,20 @@
 }
 
 .testimonials__author-name {
-  font-style: $bold-font;
+  font-family: $bold-font;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.41;
   color: #000000;
+}
+
+.testimonials__author-link {
+  text-decoration: none;
+  color: inherit;
+
+  font-size: 17px;
+  line-height: 1.76;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,18 +63,43 @@
     position: relative;
   }
 
+  .testimonials__header {
+    font-size: 43px;
+    line-height: 1.16;
+
+    margin-top: 76px;
+    margin-bottom: 36px;
+  }
+
+  .testimonials__list {
+    margin-bottom: 48px;
+  }
+
+  .testimonials__text {
+    margin-bottom: 43px;
+  }
+
+  .testimonials__author-name {
+    font-size: 18px;
+    line-height: 1.33;
+
+    margin-bottom: 3px;
+  }
+
   .testimonials__write {
     position: absolute;
 
-    top: 0;
-    right: 0;
+    top: 80px;
+    right: 52px;
+    padding: 13px 39px;
   }
 
   .testimonials__slider-controls {
     position: absolute;
 
-    bottom: 0;
-    right: 0;
+    right: 53px;
+    top: 358px;
+    width: 174px;
   }
 }
 
