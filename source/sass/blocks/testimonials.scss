@@ -1,8 +1,8 @@
 .testimonials {
-  /*TODO: place padding to wrapper MIX*/
-  //padding: 0 30px;
   margin-bottom: 44px;
+}
 
+.testimonials__wrapper {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -46,8 +46,12 @@
 
 @media (min-width: $tablet-width) {
   .testimonials {
-    //padding: 0;
+    background-color: #ffffff;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
 
+  .testimonials__wrapper {
     position: relative;
   }
 
