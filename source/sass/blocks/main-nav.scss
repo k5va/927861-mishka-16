@@ -96,12 +96,7 @@
     margin-left: auto;
   }
 
-  .main-nav__list-link {
-    //padding: 0;
-  }
-
   .main-nav__list-item {
-    //margin-right: 30px;
     border: none;
   }
 
@@ -113,12 +108,21 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__list--site {
     order: -1;
     width: 380px;
     flex-flow: row wrap;
+
+    font-size: 17px;
+    line-height: 1.41;
   }
 
   .main-nav__list--user {

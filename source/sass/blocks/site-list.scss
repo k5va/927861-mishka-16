@@ -17,3 +17,29 @@
     padding-top: 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    padding-top: 31px;
+  }
+
+  .site-list__item {
+    &:nth-child(n + 3) {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    /*TODO: refactor*/
+    &:nth-child(2n) a {
+      padding-left: 36px;
+    }
+
+    &:nth-child(n + 3) a {
+      padding-top: 25px;
+    }
+  }
+}
