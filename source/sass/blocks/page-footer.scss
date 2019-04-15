@@ -9,6 +9,7 @@
 
   width: $mobile-width - 2 * 30px;
   margin: 0 auto;
+  margin-bottom: 31px;
 }
 
 .page-footer__logo {
@@ -29,13 +30,8 @@
     margin-right: 0;
   }
 }
-
-.page-footer__copyright {
-  margin-bottom: 31px;
-}
-
 .copyright__text {
-  font-style: $bold-font;
+  font-family: $bold-font;
   font-size: 19px;
   font-weight: bold;
   font-style: normal;
@@ -50,12 +46,26 @@
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
-
+    margin-top: 52px;
+    margin-bottom: 50px;
     width: $tablet-width - 2 * 50px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__social {
+    margin: 11px 0 0 81px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  .copyright__link {
+    margin-top: -5px;
   }
 }
 
