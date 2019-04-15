@@ -41,44 +41,54 @@
 
   &::before {
     position: absolute;
-    top: -55px;
-    left: 11px;
   }
 }
 
 .about-us__item--eco-clean {
   &::before {
     content: url("../img/icon-feature-flower.svg");
+    top: -55px;
+    left: 11px;
   }
 }
 
 .about-us__item--price {
   &::before {
     content: url("../img/icon-feature-money.svg");
+    top: -54px;
+    left: 1px;
   }
 }
 
 .about-us__item--likes {
   &::before {
     content: url("../img/icon-feature-heart.svg");
+    top: -49px;
+    left: 8px;
   }
 }
 
 .about-us__item--hand-made {
   &::before {
     content: url("../img/icon-feature-ball.svg");
+    top: -51px;
+    left: 4px;
   }
 }
 
 .about-us__item--local-support {
   &::before {
     content: url("../img/icon-feature-rocket.svg");
+    top: -51px;
+    left: -5px;
   }
 }
 
 .about-us__item--package {
   &::before {
     content: url("../img/icon-feature-gift.svg");
+    top: -53px;
+    left: 4px;
   }
 }
 
