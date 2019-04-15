@@ -30,6 +30,16 @@
     margin-right: 0;
   }
 }
+
+.page-footer__copyright {
+  display: flex;
+  margin-top: 20px;
+}
+
+.copyright__link {
+  margin-top: -5px;
+}
+
 .copyright__text {
   font-family: $bold-font;
   font-size: 19px;
@@ -60,12 +70,7 @@
   }
 
   .page-footer__copyright {
-    display: flex;
     margin-top: 12px;
-  }
-
-  .copyright__link {
-    margin-top: -5px;
   }
 }
 
