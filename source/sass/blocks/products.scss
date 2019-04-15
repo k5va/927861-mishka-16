@@ -26,6 +26,10 @@
 
   display: flex;
   flex-flow: column nowrap;
+
+  /*TODO: temporary*/
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .products__item-link {
@@ -40,6 +44,27 @@
   font-weight: bold;
   font-style: normal;
   color: #ffffff;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 22px;
+  }
+}
+
+.products__item-link--interior {
+  &::before {
+    content: url("../img/icon-interior.svg");
+    right: 36px;
+  }
+}
+
+.products__item-link--toys {
+  &::before {
+    content: url("../img/icon-toy.svg");
+    right: 27px;
+  }
 }
 
 .products__item-link--interior {
@@ -69,6 +94,10 @@
 
   .products__list {
     flex-flow: row wrap;
+
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   .products__description {
