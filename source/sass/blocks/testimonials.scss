@@ -65,6 +65,8 @@
     background-color: #ffffff;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    margin-bottom: 46px;
   }
 
   .testimonials__wrapper {
@@ -76,15 +78,22 @@
     line-height: 1.16;
 
     margin-top: 76px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 
   .testimonials__list {
-    margin-bottom: 48px;
+    margin-bottom: 109px;
   }
 
   .testimonials__text {
+    font-size: 17px;
+    line-height: 1.76;
+
     margin-bottom: 43px;
+  }
+
+  .testimonials__text br {
+    display: none;
   }
 
   .testimonials__author-name {
@@ -144,9 +153,6 @@
   }
 
   .testimonials__text {
-    font-size: 17px;
-    line-height: 1.76;
-
     margin-bottom: 24px;
   }
 
