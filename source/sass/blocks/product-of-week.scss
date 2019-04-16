@@ -81,7 +81,7 @@
   .product-of-week {
     position: relative;
 
-    margin-bottom: 50px;
+    margin-bottom: 37px;
 
     &::after {
       height: 25px;
@@ -103,7 +103,7 @@
 
   .product-of-week__image {
     position: absolute;
-    top: 100px;
+    top: 155px;
     right: 55px;
   }
 
@@ -114,11 +114,9 @@
   }
 
   .product-of-week__order-button {
-    margin-bottom: 68px;
+    margin-bottom: 56px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .product-of-week__wrapper {
     width: 290px;
   }
@@ -144,14 +142,6 @@
 
   .product-of-week__params-value {
     padding-left: 0;
-  }
-
-  .product-of-week__image {
-    top: 155px;
-  }
-
-  .product-of-week__order-button {
-    margin-bottom: 44px;
   }
 }
 
