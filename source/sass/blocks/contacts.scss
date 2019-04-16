@@ -61,6 +61,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    &::before {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      top: 61px;
+      left: 114px;
+    }
+  }
+
   .contacts__header {
     font-size: 43px;
     line-height: 1.16;
@@ -103,14 +112,44 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    width: $desktop-width;
+    padding: 0 50px;
+    margin: 0 auto;
+
+    margin-bottom: 87px;
+
+    &::before {
+      top: 61px;
+      left: 114px;
+    }
+  }
+
   .contacts__wrapper {
-    width: 300px;
-    margin-left: 175px;
+    width: 350px;
+    margin-left: 121px;
+  }
+
+  .contacts__header {
+    font-size: 53px;
+    line-height: 1.08;
+
+    margin-top: 70px;
+    margin-bottom: 47px;
+  }
+
+  .contacts__info {
+    width: 290px;
+    margin-bottom: 80px;
   }
 
   .contacts__map {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
+  }
+
+  .contacts__write-us {
+    margin-left: -10px;
   }
 }
