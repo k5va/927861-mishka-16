@@ -160,6 +160,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 81px;
+  }
+
   .about-us__list,
   .about-us__header {
     margin-left: 175px;
