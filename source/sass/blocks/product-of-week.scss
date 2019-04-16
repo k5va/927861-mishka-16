@@ -1,12 +1,13 @@
 .product-of-week {
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 
   &::after {
     content: "";
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     display: block;
-    height: 25px;
+    height: 6px;
   }
 }
 
@@ -72,12 +73,19 @@
   margin: 0 0 28px 0;
 }
 
+.product-of-week__order-button {
+  margin-bottom: 37px;
+}
+
 @media (min-width: $tablet-width) {
   .product-of-week {
-    //padding: 0;
     position: relative;
 
     margin-bottom: 50px;
+
+    &::after {
+      height: 25px;
+    }
   }
 
   .product-of-week__header {
