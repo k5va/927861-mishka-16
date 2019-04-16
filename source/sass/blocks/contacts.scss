@@ -65,8 +65,8 @@
     &::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
-      top: 61px;
-      left: 114px;
+      top: 0;
+      right: 79px;
     }
   }
 
@@ -74,7 +74,7 @@
     font-size: 43px;
     line-height: 1.16;
 
-    margin: 101px 0 45px 50px;
+    margin: 14px 0 45px 50px;
   }
 
   .contacts__info {
@@ -122,6 +122,7 @@
     &::before {
       top: 61px;
       left: 114px;
+      right: unset;
     }
   }
 
