@@ -53,6 +53,11 @@
   }
 }
 
+.products__item-link span {
+  display: block;
+  width: 120px;
+}
+
 .products__item-link--interior {
   &::before {
     content: url("../img/icon-interior.svg");
@@ -107,5 +112,17 @@
     width: auto;
     margin-top: 154px;
     margin-bottom: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__description {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-bottom: 360px;
+  }
+
+  .products__list {
+    width: $desktop-width;
   }
 }
