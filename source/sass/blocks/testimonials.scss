@@ -1,5 +1,5 @@
 .testimonials {
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 }
 
 .testimonials__wrapper {
@@ -10,8 +10,9 @@
     content: "";
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     display: block;
-    height: 25px;
+    height: 6px;
   }
 }
 
@@ -60,6 +61,10 @@
   line-height: 1.76;
 }
 
+.testimonials__write {
+  margin-bottom: 46px;
+}
+
 @media (min-width: $tablet-width) {
   .testimonials {
     background-color: #ffffff;
@@ -71,6 +76,10 @@
 
   .testimonials__wrapper {
     position: relative;
+
+    &::after {
+      height: 25px;
+    }
   }
 
   .testimonials__header {
@@ -109,6 +118,8 @@
     top: 80px;
     right: 52px;
     padding: 13px 39px;
+
+    margin-bottom: 0;
   }
 
   .testimonials__slider-controls {
