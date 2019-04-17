@@ -100,10 +100,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production-process {
+    margin-bottom: 103px;
+  }
+
   .production-process__wrapper {
     /*TODO: fixed height is safe?*/
     height: 455px;
     flex-flow: column wrap;
+  }
+
+  .production-process__header {
+    width: 230px;
+    margin-left: 78px;
+    margin-top: 93px;
+    margin-bottom: 35px;
+
+    &::before {
+      top: -54px;
+      left: 3px;
+    }
   }
 
   .production-process__video {
@@ -112,6 +128,8 @@
   }
 
   .production-process__text {
-    width: 300px;
+    width: 290px;
+    margin-left: 78px;
+    margin-bottom: 47px;
   }
 }
