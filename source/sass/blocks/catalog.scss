@@ -69,6 +69,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 52px;
+  }
+
   .catalog__item {
     flex-flow: column wrap;
     align-content: flex-start;
