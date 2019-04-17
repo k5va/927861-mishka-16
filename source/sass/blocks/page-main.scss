@@ -29,3 +29,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    font-size: 53px;
+    line-height: 1.08;
+
+    padding-top: 93px;
+    padding-bottom: 100px;
+    margin-bottom: 132px;
+  }
+}
