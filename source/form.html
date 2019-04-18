@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <nav class="main-nav">
+  <header class="page-header">
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" aria-label="Скрыть - показать меню"></button>
+        <!-- TODO: change class name? -->
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/86x35"
+          <img class="page-header__logo-image" src="../img/logo-desktop.svg"
             width="86" height="35" alt="Интернет-магазин «Мишка»">
         </a>
         <ul class="main-nav__list main-nav__list--site site-list">
@@ -28,7 +31,7 @@
         </ul>
         <ul class="main-nav__list main-nav__list--user user-list">
           <li class="main-nav__list-item user-list__item user-list__item--search">
-            <a class="main-nav__list-link user-list__link" href="#">Поиск по сайту</a>
+            <a class="main-nav__list-link user-list__link" href="#" aria-label="Поиск по сайту">Поиск по сайту</a>
           </li>
           <li class="main-nav__list-item user-list__item user-list__item--cart">
             <a class="main-nav__list-link user-list__link" href="#">Корзина: пока пуста</a>
@@ -38,7 +41,7 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__header">Вязание на заказ</h1>
-      <section class="order-knitting">
+      <section class="order-knitting main-container">
         <h2 class="visually-hidden">Заказать вязание</h2>
         <p class="order-knitting__text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
@@ -144,33 +147,33 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="http://placehold.it/102x34"
+          <img class="page-footer__logo-image" src="../img/logo-footer.svg"
             width="102" height="34" alt="Интернет-магазин «Мишка»">
         </a>
         <ul class="page-footer__social social">
           <li class="page-footer__social-item social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
               aria-label="Мы в Инстаграме">
-              <img src="http://placehold.it/22x21" width="22" height="21" alt="Инстаграм">
+              <img src="../img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
             </a>
           </li>
           <li class="page-footer__social-item social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
               aria-label="Мы в Фейсбуке">
-              <img src="http://placehold.it/15x28" width="15" height="28" alt="Фейсбук">
+              <img src="../img/icon-fb.svg" width="15" height="28" alt="Фейсбук">
             </a>
           </li>
           <li class="page-footer__social-item social__item">
             <a class="social__link social__link--twitter" href="https://www.instagram.com/htmlacademy"
               aria-label="Мы в Твиттере">
-              <img src="http://placehold.it/23x40" width="23" height="40" alt="Твиттер">
+              <img src="../img/icon-twitter.svg" width="23" height="20" alt="Твиттер">
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+            <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>

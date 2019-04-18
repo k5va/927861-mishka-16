@@ -3,3 +3,28 @@
   margin: 0;
   padding: 0;
 }
+
+.slider-controls {
+  display: flex;
+}
+
+.slider__prev,
+.slider__next {
+  background-color: transparent;
+  border: 1px solid #ececec;
+
+  height: 52px;
+  width: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__prev,
+  .slider__next {
+    border: none;
+  }
+
+  .slider__item {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
