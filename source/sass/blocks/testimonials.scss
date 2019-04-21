@@ -70,8 +70,13 @@
     background-color: #ffffff;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
 
     margin-bottom: 35px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .testimonials__wrapper {
@@ -143,6 +148,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50px top;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .testimonials__header,
