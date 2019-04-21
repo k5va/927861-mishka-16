@@ -75,9 +75,12 @@
     }
   }
 
-  .production-process__video {
+  /*TODO: refactor?*/
+  .production-process__wrapper picture {
     order: -1;
+  }
 
+  .production-process__video {
     width: 668px;
     height: 455px;
   }
@@ -105,9 +108,9 @@
   }
 
   .production-process__wrapper {
-    /*TODO: fixed height is safe?*/
-    height: 455px;
     flex-flow: column wrap;
+
+    padding-left: 682px;
   }
 
   .production-process__header {
@@ -125,11 +128,22 @@
   .production-process__video {
     width: 682px;
     height: 455px;
+
+    position: absolute;
+    top: 0;
+    left: 50px;
   }
 
   .production-process__text {
     width: 290px;
     margin-left: 78px;
     margin-bottom: 47px;
+  }
+
+  .production-process__place-order {
+    margin-bottom: 60px;
+    margin-left: 78px;
+    align-self: flex-start;
+    padding: 13px 45px;
   }
 }
