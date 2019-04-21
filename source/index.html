@@ -83,8 +83,15 @@
               <td class="product-of-week__params-value">15 см</td>
             </tr>
           </table>
-          <img class="product-of-week__image" src="../img/triple-set-mobile@1x.jpg"
-            width="260" height="315" alt="Вязаная корзинка">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="../img/triple-set-desktop@1x.jpg 1x, ../img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 772px)"
+              srcset="../img/triple-set-tablet@1x.jpg 1x, ../img/triple-set-tablet@2x.jpg 2x">
+            <img class="product-of-week__image"
+              src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@2x.jpg 2x"
+              width="260" height="315" alt="Вязаная корзинка">
+          </picture>
           <p class="product-of-week__price">Цена: 990 руб.</p>
           <a class="product-of-week__order-button button" href="#">Заказать</a>
         </div>
