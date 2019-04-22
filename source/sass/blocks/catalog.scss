@@ -108,6 +108,8 @@
   .catalog_image {
     width: 334px;
     height: 334px;
+
+    display: block;
     margin-bottom: 0;
   }
 }
@@ -138,8 +140,7 @@
   }
 
   .catalog_image {
-    /*TODO: temp size? Need update image*/
-    width: 100%;
+    width: 316px;
     height: 462px;
   }
 
