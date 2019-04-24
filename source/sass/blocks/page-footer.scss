@@ -49,6 +49,19 @@
   margin-top: -5px;
 }
 
+.copyright__link svg {
+  fill: #63d1bb;
+}
+
+.copyright__link svg:hover {
+  fill: #46c1ae;
+}
+
+.copyright__link svg:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .copyright__text {
   font-family: $bold-font;
   font-size: 19px;
