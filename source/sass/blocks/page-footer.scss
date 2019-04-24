@@ -16,6 +16,15 @@
   display: none;
 }
 
+.page-footer__logo-image:hover {
+  fill: #46c1ae;
+}
+
+.page-footer__logo-image:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .page-footer__social {
   display: flex;
   flex-flow: row wrap;
