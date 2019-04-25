@@ -14,6 +14,8 @@
   position: absolute;
   top: 30px;
   left: calc(50% - 128px);
+
+  opacity: 0.2;
 }
 
 .user-list__item--cart {
@@ -24,6 +26,25 @@
   position: absolute;
   top: 30px;
   left: calc(50% - 128px);
+
+  opacity: 0.2;
+}
+
+.user-list__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-list__link:active {
+  opacity: 0.3;
+}
+
+.user-list__link:hover svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.user-list__link:active svg {
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
