@@ -3,3 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
+.social__link svg:hover {
+  fill: #46c1ae;
+}
+
+.social__link svg:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
