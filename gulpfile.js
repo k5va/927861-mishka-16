@@ -12,6 +12,8 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
@@ -24,6 +26,12 @@ gulp.task("css", function() {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([include()]))
+    .pipe(gulp.dest("source"));
 });
 
 gulp.task("images", function() {
