@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+//gulp-plumber - prevents pipe breaking caused by errors from gulp plugins
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
@@ -25,8 +26,8 @@ gulp.task("css", function() {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"));
-    //.pipe(server.stream());
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("html", function() {
@@ -81,7 +82,7 @@ gulp.task("server", function() {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch(["source/img/icon-*.svg", "source/img/logo-*.svg"],
     gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
