@@ -16,6 +16,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var replace = require("gulp-string-replace");
 
 gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
@@ -33,6 +34,7 @@ gulp.task("css", function() {
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
+    .pipe(replace("../img", "img"))
     .pipe(gulp.dest("build"));
 });
 
