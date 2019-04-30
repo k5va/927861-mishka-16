@@ -18,7 +18,7 @@
 }
 
 .order-knitting__fieldset--interior {
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 }
 
 .order-knitting__fieldset--name {
@@ -44,6 +44,8 @@
   line-height: 0.94;
   color: #63d1bb;
   text-transform: uppercase;
+
+  display: block;
 }
 
 .order-knitting__fieldset-legend--interior,
@@ -111,4 +113,17 @@
 
 .order-knitting__place-order {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .order-knitting__fields-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 500px;
+  }
+
+  .order-knitting__fields-item--color {
+    width: 250px;
+  }
 }
