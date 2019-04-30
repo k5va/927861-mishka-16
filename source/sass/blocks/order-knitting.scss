@@ -116,14 +116,63 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order-knitting__fields-list {
+  .order-knitting__text {
+    font-size: 17px;
+    line-height: 1.76;
+
+    width: 612px;
+    margin-bottom: 75px;
+  }
+
+  .order-knitting__fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .order-knitting__fieldset--color {
+    margin-bottom: 62px;
+  }
+
+  .order-knitting__fieldset-legend {
+    width: 167px;
+    flex-shrink: 0;
+  }
+
+  .order-knitting__fields-list--color {
     display: flex;
     flex-flow: row wrap;
-
-    width: 500px;
   }
 
   .order-knitting__fields-item--color {
-    width: 250px;
+    margin-bottom: 58px;
+  }
+
+  .order-knitting__fields-item--color:nth-child(2n+1) {
+    width: 262px;
+  }
+
+  .order-knitting__fields-item--name {
+    margin-bottom: 4px;
+  }
+
+  .order-knitting__fields-list--name {
+    flex-grow: 1;
+  }
+
+  .order-knitting__label {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .order-knitting__fieldset--interior {
+    margin-bottom: 78px;
+  }
+
+  .order-knitting__fields-item--interior {
+    margin-bottom: 57px;
+  }
+
+  .order-knitting__text-field {
+    margin-left: 26px;
   }
 }
