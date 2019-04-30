@@ -37,14 +37,6 @@
   margin-bottom: 6px;
 }
 
-.order-knitting__phone-field {
-  margin-bottom: 0;
-}
-
-.order-knitting__email-field {
-  margin-bottom: 0;
-}
-
 .order-knitting__fieldset-legend {
   font-size: 17px;
   font-weight: bold;
@@ -72,6 +64,18 @@
   margin-bottom: 26px;
 }
 
+.order-knitting__text-field {
+  margin-bottom: 20px;
+}
+
+.order-knitting__text-field--phone {
+  margin-bottom: 0;
+}
+
+.order-knitting__text-field--email {
+  margin-bottom: 0;
+}
+
 .order-knitting__fields-list {
   list-style: none;
   margin: 0;
@@ -86,8 +90,7 @@
   margin-bottom: 43px;
 }
 
-.order-knitting__type-label,
-.order-knitting__color-label {
+.order-knitting__label {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
