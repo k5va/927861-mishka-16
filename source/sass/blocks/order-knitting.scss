@@ -116,6 +116,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-knitting {
+    margin-bottom: 29px;
+  }
+
   .order-knitting__text {
     font-size: 17px;
     line-height: 1.76;
@@ -133,9 +137,41 @@
     margin-bottom: 62px;
   }
 
+  .order-knitting__fieldset--phone {
+    margin-bottom: 24px;
+  }
+
   .order-knitting__fieldset-legend {
     width: 167px;
     flex-shrink: 0;
+  }
+
+  .order-knitting__fieldset-legend--name {
+    margin-top: 16px;
+  }
+
+  .order-knitting__fieldset--name {
+    margin-bottom: 75px;
+  }
+
+  .order-knitting__fieldset--email {
+    margin-bottom: 100px;
+  }
+
+  .order-knitting__fieldset--addon {
+    margin-bottom: 53px;
+  }
+
+  .order-knitting__fieldset-legend--phone {
+    margin-top: 17px;
+  }
+
+  .order-knitting__fieldset-legend--email {
+    margin-top: 16px;
+  }
+
+  .order-knitting__fieldset-legend--addon {
+    margin-top: 16px;
   }
 
   .order-knitting__fields-list--color {
@@ -174,5 +210,29 @@
 
   .order-knitting__text-field {
     margin-left: 26px;
+  }
+
+  .order-knitting__text-field--phone,
+  .order-knitting__text-field--email {
+    margin-left: 0;
+  }
+
+  .order-knitting__requied-order-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+  }
+
+  .order-knitting__place-order {
+    width: auto;
+    padding: 13px 30px;
+  }
+
+  .order-knitting__requied {
+    order: 2;
+    margin-left: auto;
+
+    font-size: 17px;
+    line-height: 1.76;
   }
 }
