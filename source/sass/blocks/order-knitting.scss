@@ -1,18 +1,43 @@
+.order-knitting {
+  margin-bottom: 55px;
+}
+
 .order-knitting__text {
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.85;
 
-  margin: 0 0 30px 0;
+  margin: -5px 0 24px 0;
 }
 
 .order-knitting__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-knitting__fieldset--interior {
+  margin-bottom: 44px;
+}
+
+.order-knitting__fieldset--name {
+  margin-bottom: 11px;
+}
+
+.order-knitting__fieldset--phone {
+  margin-bottom: 33px;
+}
+
+.order-knitting__fieldset--email {
+  margin-bottom: 32px;
+}
+
+.order-knitting__fieldset--addon {
+  margin-bottom: 6px;
 }
 
 .order-knitting__fieldset-legend {
-  font-family: $bold-font;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -20,7 +45,37 @@
   color: #63d1bb;
   text-transform: uppercase;
 
+  display: block;
+}
+
+.order-knitting__fieldset-legend--interior,
+.order-knitting__fieldset-legend--color {
   margin-bottom: 35px;
+}
+
+.order-knitting__fieldset-legend--name {
+  margin-bottom: 28px;
+}
+
+.order-knitting__fieldset-legend--phone,
+.order-knitting__fieldset-legend--email {
+  margin-bottom: 11px;
+}
+
+.order-knitting__fieldset-legend--addon {
+  margin-bottom: 26px;
+}
+
+.order-knitting__text-field {
+  margin-bottom: 20px;
+}
+
+.order-knitting__text-field--phone {
+  margin-bottom: 0;
+}
+
+.order-knitting__text-field--email {
+  margin-bottom: 0;
 }
 
 .order-knitting__fields-list {
@@ -29,16 +84,155 @@
   padding: 0;
 }
 
-.order-knitting__fields-item {
-  margin-bottom: 46px;
+.order-knitting__fields-item--interior {
+  margin-bottom: 24px;
 }
 
-.order-knitting__type-label,
-.order-knitting__color-label {
-  font-family: $bold-font;
+.order-knitting__fields-item--color {
+  margin-bottom: 43px;
+}
+
+.order-knitting__label {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.06;
   color: #000000;
+
+  display: block;
+}
+
+.order-knitting__requied {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.14;
+
+  margin: 0 0 32px 0;
+}
+
+.order-knitting__place-order {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .order-knitting {
+    margin-bottom: 29px;
+  }
+
+  .order-knitting__text {
+    font-size: 17px;
+    line-height: 1.76;
+
+    width: 612px;
+    margin-bottom: 75px;
+  }
+
+  .order-knitting__fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .order-knitting__fieldset--color {
+    margin-bottom: 62px;
+  }
+
+  .order-knitting__fieldset--phone {
+    margin-bottom: 24px;
+  }
+
+  .order-knitting__fieldset-legend {
+    width: 167px;
+    flex-shrink: 0;
+  }
+
+  .order-knitting__fieldset-legend--name {
+    margin-top: 16px;
+  }
+
+  .order-knitting__fieldset--name {
+    margin-bottom: 75px;
+  }
+
+  .order-knitting__fieldset--email {
+    margin-bottom: 100px;
+  }
+
+  .order-knitting__fieldset--addon {
+    margin-bottom: 53px;
+  }
+
+  .order-knitting__fieldset-legend--phone {
+    margin-top: 17px;
+  }
+
+  .order-knitting__fieldset-legend--email {
+    margin-top: 16px;
+  }
+
+  .order-knitting__fieldset-legend--addon {
+    margin-top: 16px;
+  }
+
+  .order-knitting__fields-list--color {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .order-knitting__fields-item--color {
+    margin-bottom: 58px;
+  }
+
+  .order-knitting__fields-item--color:nth-child(2n+1) {
+    width: 262px;
+  }
+
+  .order-knitting__fields-item--name {
+    margin-bottom: 4px;
+  }
+
+  .order-knitting__fields-list--name {
+    flex-grow: 1;
+  }
+
+  .order-knitting__label {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .order-knitting__fieldset--interior {
+    margin-bottom: 78px;
+  }
+
+  .order-knitting__fields-item--interior {
+    margin-bottom: 57px;
+  }
+
+  .order-knitting__text-field {
+    margin-left: 26px;
+  }
+
+  .order-knitting__text-field--phone,
+  .order-knitting__text-field--email {
+    margin-left: 0;
+  }
+
+  .order-knitting__requied-order-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+  }
+
+  .order-knitting__place-order {
+    width: auto;
+    padding: 13px 30px;
+  }
+
+  .order-knitting__requied {
+    order: 2;
+    margin-left: auto;
+
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }

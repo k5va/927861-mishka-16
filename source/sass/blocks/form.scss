@@ -2,18 +2,18 @@
   padding-left: 64px;
 
   position: relative;
-}
 
-.form__radio-label::before {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  width: 39px;
-  height: 39px;
-  border: 2px solid #444444;
-  border-radius: 50%;
-  margin-left: -64px;
-  margin-top: -10px;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+    margin-left: -64px;
+    margin-top: -10px;
+  }
 }
 
 .form__radio:checked + .form__radio-label::after {
@@ -32,17 +32,17 @@
   padding-left: 64px;
 
   position: relative;
-}
 
-.form__checkbox-label::before {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  width: 40px;
-  height: 39px;
-  border: 2px solid #444444;
-  margin-left: -64px;
-  margin-top: -10px;
+    position: absolute;
+    width: 40px;
+    height: 39px;
+    border: 2px solid #444444;
+    margin-left: -64px;
+    margin-top: -10px;
+  }
 }
 
 .form__checkbox:checked + .form__checkbox-label::before {
@@ -50,4 +50,97 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 22px 16px;
+}
+
+.form__text-field {
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 1.06;
+  font-weight: normal;
+  font-style: normal;
+
+  color: #444444;
+}
+
+.form__text-label {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.06;
+  color: #000000;
+}
+
+.form__text-area {
+  border: 2px solid #000000;
+
+  height: 142px;
+  width: 100%;
+
+  padding-left: 16px;
+  padding-top: 13px;
+
+  font-size: 17px;
+  line-height: 1.06;
+  font-weight: normal;
+  font-style: normal;
+
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .form__radio-label {
+    padding-left: 80px;
+
+    &::before {
+      width: 52px;
+      height: 53px;
+
+      margin-left: -80px;
+      margin-top: -17px;
+    }
+  }
+
+  .form__radio:checked + .form__radio-label::after {
+    width: 22px;
+    height: 22px;
+    top: -1px;
+    left: 15px;
+  }
+
+  .form__checkbox-label {
+    padding-left: 80px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+
+      margin-top: -15px;
+      margin-left: -80px;
+    }
+  }
+
+  .form__checkbox:checked + .form__checkbox-label::before {
+    background-size: 35px 24px;
+  }
+
+  .form__text-label {
+    font-size: 19px;
+    line-height: 0.95;
+
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form__text-field {
+    font-size: 19px;
+    line-height: 0.95;
+
+    padding-left: 17px;
+  }
 }
