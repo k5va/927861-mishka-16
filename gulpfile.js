@@ -17,6 +17,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var replace = require("gulp-string-replace");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
@@ -35,6 +36,7 @@ gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(replace("../img", "img"))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
