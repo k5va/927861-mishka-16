@@ -135,6 +135,7 @@
 
   .order-knitting__fieldset--color {
     margin-bottom: 62px;
+    //background-color: $page-blocks-background-color;
   }
 
   .order-knitting__fieldset--phone {
@@ -234,5 +235,52 @@
 
     font-size: 17px;
     line-height: 1.76;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-knitting__text {
+    margin-left: 175px;
+    margin-bottom: 70px;
+
+    width: 680px;
+  }
+
+  .order-knitting__form {
+    margin-left: 64px;
+  }
+
+  .order-knitting__fieldset-legend {
+    width: 111px;
+  }
+
+  .order-knitting__fields-item--color {
+    width: 262px;
+  }
+
+  .order-knitting__fields-list--name {
+    width: 700px;
+    flex-grow: 0;
+  }
+
+  .order-knitting__text-field--phone {
+    width: 700px;
+  }
+
+  .order-knitting__text-field--email {
+    width: 700px;
+  }
+
+  .order-knitting__text-area {
+    width: 700px;
+  }
+
+  .order-knitting__fieldset--addon {
+    margin-bottom: 50px;
+  }
+
+  .order-knitting__requied-order-wrapper {
+    width: 700px;
+    margin-left: 112px;
   }
 }
