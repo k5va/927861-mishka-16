@@ -1,6 +1,6 @@
 .form__radio-label {
   padding-left: 64px;
-
+  cursor: pointer;
   position: relative;
 
   &::before {
@@ -16,7 +16,8 @@
   }
 }
 
-.form__radio-label:hover {
+.form__radio-label:hover,
+.form__radio:focus + .form__radio-label {
   &::before {
     border-color: #62d1ba;
   }
@@ -43,7 +44,7 @@
 
 .form__checkbox-label {
   padding-left: 64px;
-
+  cursor: pointer;
   position: relative;
 
   &::before {
@@ -58,7 +59,8 @@
   }
 }
 
-.form__checkbox-label:hover {
+.form__checkbox-label:hover,
+.form__checkbox:focus + .form__checkbox-label {
   &::before {
     border-color: #62d1ba;
   }
