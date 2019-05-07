@@ -94,6 +94,13 @@
 
   color: #444444;
   background-color: transparent;
+  outline: none;
+}
+
+.form__text-field:hover,
+.form__text-field:active,
+.form__text-field:focus {
+  border-color: #62d1ba;
 }
 
 .form__text-label {
@@ -119,6 +126,13 @@
   font-style: normal;
 
   color: #444444;
+  outline: none;
+}
+
+.form__text-area:hover,
+.form__text-area:active,
+.form__text-area:focus {
+  border-color: #62d1ba;
 }
 
 @media (min-width: $tablet-width) {
