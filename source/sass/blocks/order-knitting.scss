@@ -8,13 +8,13 @@
   font-style: normal;
   line-height: 1.85;
 
-  margin: -5px 0 24px 0;
+  margin-top: -5px;
+  margin-bottom: 24px;
 }
 
 .order-knitting__fieldset {
   border: none;
-  margin: 0;
-  padding: 0;
+  padding: 0 31px;
 }
 
 .order-knitting__fieldset--interior {
@@ -124,17 +124,29 @@
     font-size: 17px;
     line-height: 1.76;
 
-    width: 612px;
+    padding-right: 55px;
     margin-bottom: 75px;
   }
 
   .order-knitting__fieldset {
     display: flex;
     flex-flow: row nowrap;
+
+    padding: 0 52px;
   }
 
-  .order-knitting__fieldset--color {
-    margin-bottom: 62px;
+  .order-knitting__fieldset-wrapper {
+    background-color: $page-blocks-background-color;
+  }
+
+  .order-knitting__fieldset-wrapper--color {
+    padding-top: 65px;
+    padding-bottom: 11px;
+  }
+
+  .order-knitting__fieldset-wrapper--phone-email {
+    padding-top: 50px;
+    padding-bottom: 18px;
   }
 
   .order-knitting__fieldset--phone {
@@ -151,14 +163,12 @@
   }
 
   .order-knitting__fieldset--name {
-    margin-bottom: 75px;
-  }
-
-  .order-knitting__fieldset--email {
-    margin-bottom: 100px;
+    padding-top: 51px;
+    padding-bottom: 14px;
   }
 
   .order-knitting__fieldset--addon {
+    padding-top: 50px;
     margin-bottom: 53px;
   }
 
@@ -201,7 +211,7 @@
   }
 
   .order-knitting__fieldset--interior {
-    margin-bottom: 78px;
+    margin-bottom: 13px;
   }
 
   .order-knitting__fields-item--interior {
@@ -234,5 +244,51 @@
 
     font-size: 17px;
     line-height: 1.76;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-knitting__text {
+    padding: 0 225px;
+
+    margin-bottom: 70px;
+  }
+
+  .order-knitting__fieldset {
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+
+  .order-knitting__fieldset-legend {
+    width: 111px;
+  }
+
+  .order-knitting__fields-item--color {
+    width: 262px;
+  }
+
+  .order-knitting__fields-list--name {
+    width: 700px;
+    flex-grow: 0;
+  }
+
+  .order-knitting__text-field--phone {
+    width: 700px;
+  }
+
+  .order-knitting__text-field--email {
+    width: 700px;
+  }
+
+  .order-knitting__text-area {
+    width: 700px;
+  }
+
+  .order-knitting__fieldset--addon {
+    margin-bottom: 50px;
+  }
+
+  .order-knitting__requied-order-wrapper {
+    padding: 0 225px;
   }
 }

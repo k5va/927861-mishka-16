@@ -12,4 +12,16 @@
   background-color: transparent;
   border: 2px solid #444444;
   padding: 13px 0;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #444444;
 }
