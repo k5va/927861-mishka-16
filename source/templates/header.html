@@ -1,6 +1,15 @@
 <header class="page-header">
   <nav class="main-nav main-nav--opened main-nav--nojs">
-    <button class="main-nav__toggle" aria-label="Скрыть - показать меню"></button>
+    <button class="main-nav__toggle" aria-label="Скрыть - показать меню">
+      <svg class="main-nav__toggle-image main-nav__toggle-image--close"
+        width="21" height="20" aria-hidden="true" role="presentation">
+        <use xlink:href="#icon-menu-close"></use>
+      </svg>
+      <svg class="main-nav__toggle-image main-nav__toggle-image--open"
+        width="20" height="14" aria-hidden="true" role="presentation">
+        <use xlink:href="#icon-menu-open"></use>
+      </svg>
+    </button>
     <!-- TODO: change class name? -->
     <a class="page-header__logo" href="index.html">
       <picture>
