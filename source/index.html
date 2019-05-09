@@ -152,6 +152,30 @@
     </main>
     <!-- Footer -->
     <include src="source/templates/footer.html"></include>
+    <!-- Modals -->
+    <section class="modal add-to-cart">
+      <h2 class="add-to-cart__header">добавить в корзину</h2>
+      <form class="add-to-cart__form" method="POST" action="https://echo.htmlacademy.ru">
+        <p class="add-to-cart__text">Выберите размер:</p>
+        <ul class="add-to-cart__size-list">
+          <li class="add-to-cart__size-item">
+            <input class="add-to-cart_radio visually-hidden" type="radio" name="size" id="s-size" checked>
+            <label class="add-to-cart__label" for="s-size">s</label>
+          </li>
+          <li class="add-to-cart__size-item">
+            <input class="add-to-cart_radio visually-hidden" type="radio" name="size" id="m-size">
+            <label class="add-to-cart__label" for="m-size">m</label>
+          </li>
+          <li class="add-to-cart__size-item">
+            <input class="add-to-cart_radio visually-hidden" type="radio" name="size" id="l-size">
+            <label class="add-to-cart__label" for="l-size">l</label>
+          </li>
+        </ul>
+        <button class="add-to-cart__button button" type="submit" href="#">добавить</button>
+      </form>
+    </section>
+    <!-- Modal dialog's layer -->
+    <div class="modal__layer"></div>
     <!-- JS -->
     <script src="js/app.js"></script>
   </body>

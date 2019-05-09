@@ -1,0 +1,45 @@
+@keyframes show-modal {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal__show {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+
+  //animation: show-modal 0.6s;
+}
+
+.modal__layer {
+  display: none;
+
+  background-color: $body-background-color;
+  opacity: 0.9;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}
