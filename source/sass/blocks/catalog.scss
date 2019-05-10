@@ -17,6 +17,14 @@
 
   display: flex;
   flex-flow: column nowrap;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__item:last-child {
@@ -66,6 +74,25 @@
   color: #000000;
 
   margin: 0 0 26px 0;
+}
+
+.catalog__add-to-cart {
+  outline: none;
+}
+
+.catalog__add-to-cart svg {
+  opacity: 0.2;
+}
+
+.catalog__add-to-cart:hover svg,
+.catalog__add-to-cart:focus svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.catalog__add-to-cart:active svg {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
