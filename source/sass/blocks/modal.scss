@@ -19,7 +19,7 @@
   z-index: 10;
   top: 100px;
 
-  //animation: show-modal 0.6s;
+  animation: show-modal 0.6s;
 }
 
 .modal__layer {
@@ -37,7 +37,10 @@
 }
 
 @media (min-width: $tablet-width) {
-
+  .modal__show {
+    width: 566px;
+    left: calc(50% - 566px/2);
+  }
 }
 
 @media (min-width: $desktop-width) {
