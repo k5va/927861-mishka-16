@@ -8,18 +8,28 @@
   display: flex;
 }
 
-.slider__prev,
-.slider__next {
+.slider__button {
   background-color: transparent;
   border: 1px solid #ececec;
 
   height: 52px;
   width: 130px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.slider__button:hover .slider__button-image,
+.slider__button:focus .slider__button-image {
+  opacity: 0.6;
+}
+
+.slider__button:active .slider__button-image {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
-  .slider__prev,
-  .slider__next {
+  .slider__button {
     border: none;
   }
 
