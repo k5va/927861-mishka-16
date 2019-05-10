@@ -39,11 +39,21 @@
   width: 180px;
 }
 
-.contacts__e-mail {
+.contacts__email {
   text-decoration: none;
   color: inherit;
+  outline: none;
+  border-bottom: 1px solid $link-color;
 
-  border-bottom: 1px solid #62d1ba;
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+
+  &:active {
+    color: $link-color;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {
