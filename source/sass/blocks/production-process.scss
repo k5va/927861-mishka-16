@@ -37,6 +37,26 @@
   margin: 0 0 27px 0;
 }
 
+.production-process__video-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 135px;
+  left: 105px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
 .production-process__text {
   font-size: 13px;
   font-weight: normal;
@@ -99,6 +119,11 @@
     margin: 0 44px;
     margin-bottom: 46px;
   }
+
+  .production-process__video-button {
+    top: 170px;
+    left: 326px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -144,5 +169,10 @@
     margin-left: 78px;
     align-self: flex-start;
     padding: 13px 45px;
+  }
+
+  .production-process__video-button {
+    top: 170px;
+    left: 326px;
   }
 }
