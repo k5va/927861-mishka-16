@@ -101,8 +101,8 @@
             <ul class="order-knitting__fields-list order-knitting__fields-list--name">
             <li class="order-knitting__fields-item order-knitting__fields-item--name">
               <label class="form__text-label">Имя:
-              <input class="order-knitting__text-field form__text-field" placeholder="Введите ваше имя*"
-                type="text" name="first-name" required>
+                <input class="order-knitting__text-field form__text-field" placeholder="Введите ваше имя*"
+                  type="text" name="first-name" required>
               </label>
             </li>
             <li class="order-knitting__fields-item order-knitting__fields-item--name">
@@ -120,23 +120,28 @@
             </ul>
           </div>
           <div class="order-knitting__fieldset-wrapper order-knitting__fieldset-wrapper--phone-email">
-            <div class="order-knitting__fieldset order-knitting__fieldset--phone main-container"
-              role="group" aria-labelledby="phone-label">
-              <span class="order-knitting__fieldset-legend order-knitting__fieldset-legend--phone"
-                id="phone-label">тел
-              </span>
-              <input class="order-knitting__text-field order-knitting__text-field--phone
-                form__text-field" placeholder="+7 XXX XXX XX XX*"
-                type="tel" name="phone" aria-label="номер телефона" required>
+            <div class="order-knitting__fieldset order-knitting__fieldset--phone main-container">
+              <label class="form__text-label form__text-label--phone">тел
+                <input class="order-knitting__text-field order-knitting__text-field--phone
+                  form__text-field" placeholder="+7 XXX XXX XX XX*"
+                  type="tel" name="phone" aria-label="номер телефона" required>
+                <svg class="form__text-field-icon form__text-field-icon--phone" width="25" height="24"
+                  aria-hidden="true" role="presentation">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </label>
             </div>
             <div class="order-knitting__fieldset  order-knitting__fieldset--email main-container"
               role="group" aria-labelledby="email-label">
-              <span class="order-knitting__fieldset-legend order-knitting__fieldset-legend--email"
-                id="email-label">e-mail
-              </span>
-              <input class="order-knitting__text-field order-knitting__text-field--email
-                form__text-field" placeholder="Ваш Email*"
-                type="email" name="email" aria-label="Адрес электронной почты" required>
+              <label class="form__text-label form__text-label--email">e-mail
+                <input class="order-knitting__text-field order-knitting__text-field--email
+                  form__text-field" placeholder="Ваш Email*"
+                  type="email" name="email" aria-label="Адрес электронной почты" required>
+                <svg class="form__text-field-icon form__text-field-icon--email" width="32" height="21"
+                  aria-hidden="true" role="presentation">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </label>
             </div>
           </div>
           <div class="order-knitting__fieldset order-knitting__fieldset--addon main-container"

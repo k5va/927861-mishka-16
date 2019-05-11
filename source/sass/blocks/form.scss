@@ -97,6 +97,9 @@
   color: #444444;
   background-color: transparent;
   outline: none;
+
+  position: relative;
+  z-index: 1;
 }
 
 .form__text-field:hover,
@@ -105,12 +108,39 @@
   border-color: #62d1ba;
 }
 
+.form__text-field + svg {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  opacity: 0.2;
+}
+
+.form__text-field:hover + svg {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.form__text-field:active + svg,
+.form__text-field:focus + svg {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .form__text-label {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.06;
   color: #000000;
+}
+
+.form__text-label--phone,
+.form__text-label--email {
+  line-height: 0.94;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  position: relative;
 }
 
 .form__text-area {
@@ -186,5 +216,21 @@
     line-height: 0.95;
 
     padding-left: 17px;
+  }
+
+  .form__text-field + svg {
+    bottom: 15px;
+  }
+
+  .form__text-label--phone,
+  .form__text-label--email {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__text-label--phone,
+  .form__text-label--email {
+    width: 822px;
   }
 }
