@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .catalog__list {
@@ -32,18 +32,17 @@
 }
 
 .catalog_image {
-  margin: 0 0 27px 0;
+  margin: 0 0 21px 0;
 }
 
 .catalog__name {
-  font-family: $bold-font;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.41;
   color: #000000;
 
-  margin: 0 0 5px 27px;
+  margin: 0 0 6px 27px;
   width: 200px;
 }
 
@@ -65,7 +64,6 @@
 }
 
 .catalog__price {
-  font-family: $bold-font;
   font-size: 15px;
   font-weight: bold;
   font-style: normal;
