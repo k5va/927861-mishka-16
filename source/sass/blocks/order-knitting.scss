@@ -8,13 +8,13 @@
   font-style: normal;
   line-height: 1.85;
 
-  margin-top: -5px;
+  margin-top: -8px;
   margin-bottom: 24px;
 }
 
 .order-knitting__fieldset {
   border: none;
-  padding: 0 31px;
+  padding: 0 30px;
 }
 
 .order-knitting__fieldset--interior {
@@ -22,11 +22,11 @@
 }
 
 .order-knitting__fieldset--name {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .order-knitting__fieldset--phone {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 }
 
 .order-knitting__fieldset--email {
@@ -34,7 +34,7 @@
 }
 
 .order-knitting__fieldset--addon {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .order-knitting__fieldset-legend {
@@ -72,10 +72,14 @@
 
 .order-knitting__text-field--phone {
   margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 18px;
 }
 
 .order-knitting__text-field--email {
   margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 18px;
 }
 
 .order-knitting__fields-list {
