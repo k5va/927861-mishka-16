@@ -1,5 +1,5 @@
 .product-of-week {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -13,17 +13,17 @@
 }
 
 .product-of-week__header {
-  font-family: $bold-font;
   font-size: 17px;
   line-height: 1.18;
   font-weight: bold;
   font-style: normal;
+  text-transform: uppercase;
   color: #63d1bb;
+
   margin: 0 0 26px 0;
 }
 
 .product-of-week__name {
-  font-family: $bold-font;
   font-size: 25px;
   line-height: 1.2;
   font-weight: bold;
@@ -55,11 +55,10 @@
 }
 
 .product-of-week__image {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .product-of-week__price {
-  font-family: $bold-font;
   font-size: 17px;
   line-height: 1.41;
   font-weight: bold;
@@ -70,7 +69,7 @@
 }
 
 .product-of-week__order-button {
-  margin-bottom: 37px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
