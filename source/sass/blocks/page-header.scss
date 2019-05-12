@@ -21,6 +21,9 @@
   .page-header {
     width: $tablet-width;
     padding: 0 50px;
+
+    position: relative;
+    z-index: 1;
   }
 }
 
