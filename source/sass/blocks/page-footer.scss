@@ -67,7 +67,6 @@
 }
 
 .copyright__text {
-  font-family: $bold-font;
   font-size: 19px;
   font-weight: bold;
   font-style: normal;
@@ -92,11 +91,19 @@
   }
 
   .page-footer__social {
-    margin: 11px 0 0 81px;
+    margin: 11px 0 0 73px;
   }
 
   .page-footer__copyright {
     margin-top: 12px;
+  }
+
+  .copyright__text {
+    margin-right: 28px;
+  }
+
+  .copyright__link {
+    margin-right: 4px;
   }
 }
 
