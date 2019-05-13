@@ -55,7 +55,7 @@
 
   &::before {
     position: absolute;
-    top: 22px;
+    top: 30px;
 
     opacity: 0.5;
   }
@@ -111,7 +111,7 @@
 
   &::before {
     content: url("../img/icon-toy.svg");
-    right: 27px;
+    right: 34px;
   }
 }
 
@@ -152,7 +152,7 @@
   }
 
   .products__item {
-    width: 50%;
+    width: 334px;
   }
 
   .products__item-link {
@@ -178,6 +178,7 @@
     width: auto;
     margin-top: 154px;
     margin-bottom: 375px;
+    margin-left: -5px;
   }
 }
 

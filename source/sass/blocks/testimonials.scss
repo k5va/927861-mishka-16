@@ -90,6 +90,7 @@
 
     margin-top: 76px;
     margin-bottom: 33px;
+    margin-left: -5px;
   }
 
   .testimonials__list {
@@ -116,12 +117,15 @@
 
   .testimonials__write {
     position: absolute;
-
     top: 80px;
     right: 52px;
-    padding: 13px 39px;
 
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 0;
+    /* TODO: Move to button? */
+    font-size: 17px;
+    line-height: 1.18;
   }
 
   .testimonials__slider-controls {

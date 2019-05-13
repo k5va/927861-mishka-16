@@ -78,7 +78,7 @@
       content: url("../img/icon-flag.svg");
       position: absolute;
       top: 0;
-      right: 79px;
+      right: 57px;
     }
   }
 
@@ -86,32 +86,42 @@
     font-size: 43px;
     line-height: 1.16;
 
-    margin: 14px 0 45px 50px;
+    margin: 14px 0 45px 46px;
   }
 
   .contacts__info {
     font-size: 17px;
     line-height: 1.76;
     margin-bottom: 54px;
-    margin-left: 50px;
-    width: 608px;
+    margin-left: 46px;
+    width: 688px;
   }
 
   .contacts__address {
-    width: 194px;
+    width: 222px;
   }
 
   .contacts__map {
-    margin-bottom: 56px;
+    margin-bottom: 47px;
   }
 
-  .table__value {
-    padding-left: 17px;
+  .table__value--email {
+    padding-left: 20px;
+  }
+
+  .table__value--address {
+    padding-left: 20px;
+    width: 292px;
   }
 
   .contacts__write-us {
-    padding: 13px 39px;
+    padding-right: 39px;
+    padding-left: 39px;
     margin-bottom: 18px;
+    margin-left: -4px;
+
+    font-size: 17px;
+    line-height: 1.18;
   }
 }
 
