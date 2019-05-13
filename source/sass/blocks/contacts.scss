@@ -143,7 +143,7 @@
 
     &::before {
       top: 61px;
-      left: 114px;
+      left: 113px;
       right: unset;
     }
   }
@@ -159,11 +159,13 @@
 
     margin-top: 70px;
     margin-bottom: 47px;
+    margin-left: 47px;
   }
 
   .contacts__info {
     width: 290px;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
+    margin-left: 49px;
   }
 
   .contacts__map {
@@ -176,5 +178,17 @@
 
   .contacts__write-us {
     margin-left: -10px;
+  }
+
+  .table__value--email {
+    padding-left: 22px;
+  }
+
+  .table__value--address {
+    padding-left: 24px;
+  }
+
+  .table__field {
+    padding-bottom: 25px;
   }
 }

@@ -154,17 +154,18 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 81px;
+    margin-bottom: 83px;
   }
 
-  .about-us__list,
-  .about-us__header {
+  .about-us__list {
     margin-left: 175px;
   }
 
   .about-us__header {
     font-size: 53px;
     line-height: 1.08;
+    margin-left: 169px;
+    margin-bottom: 103px;
   }
 
   .about-us__list {

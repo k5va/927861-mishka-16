@@ -187,10 +187,15 @@
   .products__description {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 360px;
+    margin-bottom: 359px;
+    margin-left: 0;
   }
 
   .products__list {
     width: $desktop-width;
+  }
+
+  .products__item {
+    width: 50%;
   }
 }

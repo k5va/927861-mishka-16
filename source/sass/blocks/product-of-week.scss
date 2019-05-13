@@ -165,20 +165,22 @@
   }
 
   .product-of-week__header {
-    top: 61px;
-    left: 73px;
+    top: 63px;
+    left: 72px;
   }
 
   .product-of-week__name {
     font-size: 53px;
     line-height: 1.08;
+
     margin-top: 47px;
+    margin-left: -6px;
 
     z-index: 1;
   }
 
   .product-of-week__description {
-    margin-top: 152px;
+    margin-top: 154px;
     margin-bottom: 50px;
   }
 
@@ -187,13 +189,14 @@
   }
 
   .product-of-week__image {
-    top: 0;
+    top: -5px;
+    right: 50px;
 
     width: 525px;
     height: 636px;
   }
 
   .product-of-week__order-button {
-    margin-bottom: 74px;
+    margin-bottom: 73px;
   }
 }
