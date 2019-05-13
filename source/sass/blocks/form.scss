@@ -253,13 +253,39 @@
     padding-left: 17px;
   }
 
-  .form__text-field + svg {
-    bottom: 15px;
+  .form__text-field::placeholder {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .form__text-field--phone + svg {
+    bottom: 18px;
+    right: 26px;
+  }
+
+  .form__text-field--email + svg {
+    bottom: 16px;
+    right: 23px;
   }
 
   .form__text-label--phone,
   .form__text-label--email {
+    font-size: 17px;
+    line-height: 0.94;
+
     width: 100%;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .form__text-area::placeholder {
+    opacity: 0.3;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 0.95;
   }
 }
 
