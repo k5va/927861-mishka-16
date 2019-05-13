@@ -93,7 +93,7 @@
     line-height: 1.2;
 
     margin-top: 11px;
-    margin-left: 108px;
+    margin-left: 105px;
     margin-bottom: 33px;
     width: auto;
 
@@ -101,6 +101,10 @@
       top: -5px;
       left: -63px;
     }
+  }
+
+  .production-process__wrapper {
+    width: 668px;
   }
 
   /*TODO: refactor?*/
@@ -111,13 +115,15 @@
   .production-process__video {
     width: 668px;
     height: 455px;
+
+    margin-bottom: 22px;
   }
 
   .production-process__text {
     font-size: 15px;
     line-height: 2;
 
-    margin-left: 42px;
+    margin-left: 39px;
     margin-bottom: 36px;
     width: 590px;
   }
@@ -125,13 +131,15 @@
   .production-process__place-order {
     align-self: stretch;
 
-    margin: 0 44px;
-    margin-bottom: 46px;
+    margin: 0 41px 46px 41px;
+
+    font-size: 17px;
+    line-height: 0.94;
   }
 
   .production-process__video-button {
-    top: 170px;
-    left: 326px;
+    top: 190px;
+    left: 327px;
   }
 }
 

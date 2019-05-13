@@ -98,12 +98,16 @@
     margin-bottom: 52px;
   }
 
+  .catalog__list {
+    width: 669px;
+  }
+
   .catalog__item {
     flex-flow: column wrap;
     align-content: flex-start;
     /* TODO: fixed height - not good */
     height: 334px;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   .catalog__name {
@@ -129,7 +133,7 @@
 
   .catalog__price-cart-wrapper {
     margin-top: auto;
-    margin-left: 35px;
+    margin-left: 30px;
     width: 269px;
   }
 
