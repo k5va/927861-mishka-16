@@ -23,6 +23,10 @@
   width: 245px;
 }
 
+.products__free-delivery {
+  display: none;
+}
+
 .products__list {
   list-style: none;
   padding: 0;
@@ -134,6 +138,17 @@
       position: absolute;
       bottom: -14px;
     }
+  }
+
+  .products__free-delivery {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: calc(50% + 101px);
   }
 
   .products__item {
