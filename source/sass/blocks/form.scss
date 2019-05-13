@@ -159,6 +159,23 @@
   text-transform: uppercase;
 
   position: relative;
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+    right: 0;
+    top: 11px;
+  }
+}
+
+.form__text-label--email {
+  &::before {
+    position: absolute;
+    width: 179px;
+  }
 }
 
 .form__text-area {

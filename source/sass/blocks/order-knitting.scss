@@ -46,6 +46,18 @@
   text-transform: uppercase;
 
   display: block;
+
+  position: relative;
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+    right: 0;
+    top: 8px;
+  }
 }
 
 .order-knitting__fieldset-legend--interior,
