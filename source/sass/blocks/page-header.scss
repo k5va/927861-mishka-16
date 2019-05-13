@@ -17,6 +17,10 @@
   opacity: 0.3;
 }
 
+.page-header__free-delivery {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;
@@ -24,6 +28,17 @@
 
     position: relative;
     z-index: 1;
+  }
+
+  .page-header__free-delivery {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+
+    display: block;
+    position: absolute;
+    top: 92px;
+    left: calc(50% + 101px);
   }
 }
 
