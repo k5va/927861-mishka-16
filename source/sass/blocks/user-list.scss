@@ -67,3 +67,9 @@
     left: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    padding: 31px 3px 34px 81px;
+  }
+}

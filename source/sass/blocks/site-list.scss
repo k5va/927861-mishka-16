@@ -29,7 +29,13 @@
     padding-top: 31px;
   }
 
+  .site-list__link--sale {
+    padding-left: 26px;
+  }
+
   .site-list__item {
+    margin-right: 35px;
+
     &:nth-child(n + 3) {
       font-size: 15px;
       line-height: 1.6;
