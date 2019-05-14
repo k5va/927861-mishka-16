@@ -3,7 +3,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: $body-background-color;
 
-  padding: 30px 36px;
+  padding: 30px 36px 47px 36px;
 }
 
 .add-to-cart__wrapper {
@@ -13,7 +13,7 @@
 }
 
 .add-to-cart__header {
-  margin: 0 0 25px 0;
+  margin: 0 0 12px 5px;
 
   width: 148px;
 
@@ -31,7 +31,7 @@
 }
 
 .add-to-cart__text {
-  margin: 0 0 28px 0;
+  margin: 0 0 23px 0;
 
   font-size: 15px;
   font-weight: normal;
@@ -85,9 +85,17 @@
 }
 
 .add-to-cart__button {
+  font-size: 17px;
+  line-height: 0.94;
+  font-weight: bold;
+  font-style: normal;
+
   background-color: #63d1bb;
   color: #ffffff;
   border: none;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
