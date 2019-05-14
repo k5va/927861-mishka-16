@@ -40,6 +40,10 @@
   margin: 0 0 27px 0;
 }
 
+.testimonials__text br {
+  display: none;
+}
+
 .testimonials__author-name {
   font-family: $bold-font;
   font-size: 17px;
@@ -102,10 +106,6 @@
     line-height: 1.76;
 
     margin-bottom: 43px;
-  }
-
-  .testimonials__text .br__desktop {
-    display: none;
   }
 
   .testimonials__author-name {
@@ -192,8 +192,8 @@
     margin-bottom: 24px;
   }
 
-  .testimonials__text .br__tablet {
-    display: none;
+  .testimonials__text br {
+    display: inline;
   }
 
   .testimonials__slider-controls {
