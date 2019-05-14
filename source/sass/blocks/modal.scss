@@ -39,6 +39,12 @@
 @media (min-width: $tablet-width) {
   .modal__show {
     width: 566px;
-    left: calc(50% - 566px / 2 - 2px);
+    left: calc(50% - 566px / 2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__show {
+    left: calc(50% - 566px / 2);
   }
 }
