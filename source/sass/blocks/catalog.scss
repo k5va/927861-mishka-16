@@ -159,6 +159,8 @@
   .catalog__list {
     flex-flow: row wrap;
     justify-content: space-between;
+
+    width: auto;
   }
 
   .catalog__item {
@@ -173,7 +175,8 @@
   }
 
   .catalog__description {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
+    margin-left: 25px;
   }
 
   .catalog_image {
@@ -182,7 +185,12 @@
   }
 
   .catalog__price-cart-wrapper {
-    margin-left: 27px;
+    margin-left: 25px;
     width: 257px;
+  }
+
+  .catalog__name {
+    margin-top: 25px;
+    margin-left: 25px;
   }
 }

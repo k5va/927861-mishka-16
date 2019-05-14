@@ -150,7 +150,7 @@
 
   .production-process__wrapper {
     flex-flow: column wrap;
-
+    width: auto;
     padding-left: 682px;
   }
 
@@ -182,14 +182,15 @@
   }
 
   .production-process__place-order {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     margin-left: 78px;
     align-self: flex-start;
-    padding: 13px 45px;
+    padding-left: 43px;
+    padding-right: 43px;
   }
 
   .production-process__video-button {
-    top: 170px;
-    left: 326px;
+    top: 187px;
+    left: 335px;
   }
 }
