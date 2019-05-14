@@ -292,6 +292,14 @@
 @media (min-width: $desktop-width) {
   .form__text-label--phone,
   .form__text-label--email {
-    width: 822px;
+    width: 812px;
+  }
+
+  .form__text-field--phone + svg {
+    right: 7px;
+  }
+
+  .form__text-field--email + svg {
+    right: 4px;
   }
 }

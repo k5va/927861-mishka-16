@@ -279,7 +279,7 @@
   .order-knitting__text {
     padding: 0 225px;
 
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .order-knitting__fieldset {
@@ -287,8 +287,12 @@
     padding-right: 114px;
   }
 
+  .order-knitting__fieldset--interior {
+    margin-bottom: 12px;
+  }
+
   .order-knitting__fieldset-legend {
-    width: 111px;
+    width: 114px;
   }
 
   .order-knitting__fields-item--color {
