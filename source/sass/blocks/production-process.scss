@@ -42,7 +42,9 @@
 }
 
 .production-process__video {
-  margin: 0 0 23px 0;
+  width: 260px;
+  height: 150px;
+  margin: 0 0 28px 0;
 }
 
 .production-process__video-button {
@@ -107,16 +109,13 @@
     width: 668px;
   }
 
-  /*TODO: refactor?*/
-  .production-process__wrapper picture {
-    order: -1;
-  }
-
   .production-process__video {
+    order: -1;
+
     width: 668px;
     height: 455px;
 
-    margin-bottom: 22px;
+    margin-bottom: 29px;
   }
 
   .production-process__text {

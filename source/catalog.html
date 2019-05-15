@@ -112,14 +112,16 @@
       <section class="production-process main-container">
         <div class="production-process__wrapper">
           <h2 class="production-process__header">Процесс производства</h2>
-          <picture>
-            <source media="(min-width: 1150px)"
-              srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 772px)"
-              srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="production-process__video" src="img/video-mobile@1x.jpg"
-              srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
-          </picture>
+          <div class="production-process__video">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 772px)"
+                srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg"
+                srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+            </picture>
+          </div>
           <button class="production-process__video-button" type="button" aria-label="Запустить видео">
             <svg aria-hidden="true" role="presentation"
               width="101" height="77">
