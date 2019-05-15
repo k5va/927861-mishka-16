@@ -13,6 +13,7 @@
 
 .main-nav__toggle {
   position: absolute;
+  z-index: 1;
   left: calc(50% + 103px);
   top: 27px;
 
@@ -20,6 +21,18 @@
   height: 22px;
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle-image--open,
