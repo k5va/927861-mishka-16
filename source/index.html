@@ -138,15 +138,19 @@
               </td>
             </tr>
           </table>
-          <picture>
-            <source media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 772px)"
-              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map"
-              src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
-              width="322" height="457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
-          </picture>
+          <div class="contacts__map">
+            <iframe class="contacts__interactive-map" src="https://yandex.ru/map-widget/v1/-/CBF2r0BLsD"
+              allowfullscreen></iframe>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 772px)"
+                srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img
+                src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+            </picture>
+          </div>
           <a class="contacts__write-us button" href="#">Напишите нам</a>
         </div>
       </section>
