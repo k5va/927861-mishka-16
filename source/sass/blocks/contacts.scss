@@ -85,11 +85,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    margin-bottom: 38px;
+
     &::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
       top: 0;
-      right: 57px;
+      right: 53px;
       width: 47px;
       height: 81px;
     }
@@ -123,7 +125,7 @@
   }
 
   .table__value--address {
-    padding-left: 20px;
+    padding-left: 22px;
     width: 292px;
   }
 
