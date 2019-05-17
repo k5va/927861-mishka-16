@@ -83,16 +83,11 @@
   margin-bottom: 20px;
 }
 
-.order-knitting__text-field--phone {
-  margin-bottom: 0;
-  padding-top: 16px;
-  padding-bottom: 14px;
-}
-
+.order-knitting__text-field--phone,
 .order-knitting__text-field--email {
   margin-bottom: 0;
   padding-top: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 
 .order-knitting__fields-list {
@@ -253,6 +248,7 @@
   .order-knitting__text-field--phone,
   .order-knitting__text-field--email {
     margin-left: auto;
+    padding-bottom: 14px;
     width: 500px;
   }
 
