@@ -1,5 +1,5 @@
 .production-process {
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 
   position: relative;
 }
@@ -9,17 +9,24 @@
 
   display: flex;
   flex-flow: column nowrap;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production-process__header {
-  font-family: $bold-font;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.41;
   color: #000000;
 
-  margin: 23px 0 24px 91px;
+  margin: 23px 0 24px 89px;
   width: 130px;
 
   position: relative;
@@ -35,7 +42,29 @@
 }
 
 .production-process__video {
-  margin: 0 0 27px 0;
+  width: 260px;
+  height: 150px;
+  margin: 0 0 28px 0;
+}
+
+.production-process__video-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 131px;
+  left: 104px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .production-process__text {
@@ -44,7 +73,7 @@
   font-style: normal;
   line-height: 1.85;
 
-  margin: 0 0 28px 33px;
+  margin: 0 0 25px 33px;
   width: 190px;
 }
 
@@ -52,7 +81,8 @@
   margin: 0 0 33px 0;
 
   align-self: center;
-  padding: 13px 24px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,7 +95,7 @@
     line-height: 1.2;
 
     margin-top: 11px;
-    margin-left: 108px;
+    margin-left: 105px;
     margin-bottom: 33px;
     width: auto;
 
@@ -75,21 +105,24 @@
     }
   }
 
-  /*TODO: refactor?*/
-  .production-process__wrapper picture {
-    order: -1;
+  .production-process__wrapper {
+    width: 668px;
   }
 
   .production-process__video {
+    order: -1;
+
     width: 668px;
     height: 455px;
+
+    margin-bottom: 29px;
   }
 
   .production-process__text {
     font-size: 15px;
     line-height: 2;
 
-    margin-left: 42px;
+    margin-left: 39px;
     margin-bottom: 36px;
     width: 590px;
   }
@@ -97,8 +130,15 @@
   .production-process__place-order {
     align-self: stretch;
 
-    margin: 0 44px;
-    margin-bottom: 46px;
+    margin: 0 41px 46px 41px;
+
+    font-size: 17px;
+    line-height: 0.94;
+  }
+
+  .production-process__video-button {
+    top: 190px;
+    left: 327px;
   }
 }
 
@@ -109,7 +149,7 @@
 
   .production-process__wrapper {
     flex-flow: column wrap;
-
+    width: auto;
     padding-left: 682px;
   }
 
@@ -141,9 +181,15 @@
   }
 
   .production-process__place-order {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     margin-left: 78px;
     align-self: flex-start;
-    padding: 13px 45px;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  .production-process__video-button {
+    top: 187px;
+    left: 335px;
   }
 }

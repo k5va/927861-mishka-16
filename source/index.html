@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- TODO: add normalizer -->
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body class="page-body">
     <!-- SVG sprite -->
@@ -59,14 +60,14 @@
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
               srcset="../img/triple-set-desktop@1x.webp 1x, ../img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 772px)"
+            <source type="image/webp" media="(min-width: 768px)"
               srcset="../img/triple-set-tablet@1x.webp 1x, ../img/triple-set-tablet@2x.webp 2x">
             <source type="image/webp"
               srcset="../img/triple-set-mobile@1x.webp 1x, ../img/triple-set-mobile@2x.webp 2x">
 
             <source media="(min-width: 1150px)"
               srcset="../img/triple-set-desktop@1x.jpg 1x, ../img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 772px)"
+            <source media="(min-width: 768px)"
               srcset="../img/triple-set-tablet@1x.jpg 1x, ../img/triple-set-tablet@2x.jpg 2x">
             <img class="product-of-week__image"
               src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@2x.jpg 2x"
@@ -95,8 +96,8 @@
               <blockquote class="testimonials__text" cite="https://www.instagram.com/misssssiskras">
                 <p>
                   Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                  как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                  и мои<br>фотографии сразу стали более стильными, а также набирают больше лайков!
+                  как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp;<br> и
+                  мои фотографии сразу стали более стильными, а также набирают больше лайков!
                 </p>
               </blockquote>
               <cite class="testimonials__author-name">Анастасия Красильникова</cite>
@@ -104,13 +105,13 @@
             </li>
           </ul>
           <div class="testimonials__slider-controls slider-controls">
-            <button class="testimonials__prev slider__prev" type="button" aria-label="Предыдущий">
-              <svg class="slider__prev-image" width="50" height="26" aria-hidden="true" role="presentation">
+            <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий">
+              <svg class="slider__button-image" width="50" height="26" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-left-arrow"></use>
               </svg>
             </button>
-            <button class="testimonials__next slider__next" type="button" aria-label="Следующий">
-              <svg class="slider__next-image" width="50" height="26" aria-hidden="true" role="presentation">
+            <button class="slider__button slider__button--prev" type="button" aria-label="Следующий">
+              <svg class="slider__button-image" width="50" height="26" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-right-arrow"></use>
               </svg>
             </button>
@@ -124,33 +125,43 @@
           <table class="contacts__info table">
             <tr>
               <td class="table__field">e-mail:</td>
-              <td class="table__value">
-                <a class="contacts__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <td class="table__value table__value--email">
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr>
               <td class="table__field">адрес:</td>
-              <td class="table__value">
+              <td class="table__value table__value--address">
                 <address class="contacts__address">
-                  г. Санкт-Петербург, ул. Большая Конюшенная,<br>д. 19/8, офис 101
+                  г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>д. 19/8, офис 101
                 </address>
               </td>
             </tr>
           </table>
-          <picture>
-            <source media="(min-width: 1150px)"
-              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 772px)"
-              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map"
-              src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
-              width="322" height="457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
-          </picture>
+          <div class="contacts__map">
+            <iframe class="contacts__interactive-map" src="https://yandex.ru/map-widget/v1/-/CBF2r0BLsD"
+              allowfullscreen></iframe>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img
+                src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+            </picture>
+          </div>
           <a class="contacts__write-us button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
     <!-- Footer -->
     <include src="source/templates/footer.html"></include>
+    <!-- Modals -->
+    <include src="source/modals/add-to-cart.html"></include>
+    <!-- Modal dialog's layer -->
+    <div class="modal__layer"></div>
+    <!-- JS -->
+    <script src="js/app.js"></script>
   </body>
 </html>

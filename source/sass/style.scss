@@ -1,8 +1,10 @@
 @import "variables.scss";
 @import "scaffolding.scss";
+@import "blocks/modal.scss";
 @import "blocks/button.scss";
 @import "blocks/slider.scss";
 @import "blocks/form.scss";
+@import "blocks/table.scss";
 @import "blocks/social.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
@@ -19,3 +21,4 @@
 @import "blocks/catalog.scss";
 @import "blocks/production-process.scss";
 @import "blocks/order-knitting.scss";
+@import "blocks/add-to-cart.scss";

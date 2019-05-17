@@ -17,10 +17,28 @@
   opacity: 0.3;
 }
 
+.page-header__free-delivery {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;
     padding: 0 50px;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-header__free-delivery {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+
+    display: block;
+    position: absolute;
+    top: 92px;
+    left: calc(50% + 104px);
   }
 }
 
@@ -31,5 +49,9 @@
 
   .page-header__logo {
     margin: 9px 0 0 -26px;
+  }
+
+  .page-header__free-delivery {
+    left: calc(50% + 294px);
   }
 }

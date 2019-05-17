@@ -1,21 +1,17 @@
 .about-us {
   margin-bottom: 55px;
-  //padding: 0 30px;
 }
 
 .about-us__header {
-  font-family: $bold-font;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.2;
   color: #000000;
-  /*TODO: Why margin-top here?*/
-  margin: 0 0 88px 0;
+  margin: 0 0 87px -2px;
 }
 
 .about-us__list {
-  font-family: $bold-font;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -50,7 +46,7 @@
   &::before {
     content: url("../img/icon-feature-flower.svg");
     top: -55px;
-    left: 11px;
+    left: 8px;
   }
 }
 
@@ -110,16 +106,14 @@
   .about-us__list {
     font-size: 20px;
     line-height: 1.1;
-    /*TODO: data overflow?*/
     height: 360px;
   }
 
   .about-us__header {
     font-size: 43px;
     line-height: 1.16;
-    /*TODO: why margin-top was here?*/
-    margin-top: 0;
     margin-bottom: 105px;
+    margin-left: -5px;
   }
 
   .about-us__item {
@@ -158,21 +152,19 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 81px;
+    margin-bottom: 83px;
   }
 
-  .about-us__list,
-  .about-us__header {
+  .about-us__list {
+    align-content: flex-start;
     margin-left: 175px;
   }
 
   .about-us__header {
     font-size: 53px;
     line-height: 1.08;
-  }
-
-  .about-us__list {
-    align-content: flex-start;
+    margin-left: 169px;
+    margin-bottom: 103px;
   }
 
   .about-us__item {

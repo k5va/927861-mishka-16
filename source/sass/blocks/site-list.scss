@@ -30,6 +30,8 @@
   }
 
   .site-list__item {
+    margin-right: 35px;
+
     &:nth-child(n + 3) {
       font-size: 15px;
       line-height: 1.6;
@@ -39,13 +41,16 @@
       margin-right: 0;
     }
 
-    /*TODO: refactor*/
-    &:nth-child(2n) a {
-      padding-left: 36px;
-    }
-
     &:nth-child(n + 3) a {
       padding-top: 25px;
     }
+  }
+
+  .site-list__link--order {
+    padding-left: 36px;
+  }
+
+  .site-list__link--sale {
+    padding-left: 26px;
   }
 }

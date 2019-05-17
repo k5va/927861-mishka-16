@@ -53,7 +53,8 @@
   }
 
   .user-list__link {
-    padding: 31px 0 34px 85px;
+    padding: 31px 2px 34px 81px;
+    height: 100%;
   }
 
   .user-list__link-icon--cart {
@@ -64,5 +65,11 @@
   .user-list__link-icon--search {
     top: 36px;
     left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    padding: 31px 3px 34px 81px;
   }
 }

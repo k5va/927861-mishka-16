@@ -8,13 +8,13 @@
   font-style: normal;
   line-height: 1.85;
 
-  margin-top: -5px;
+  margin-top: -8px;
   margin-bottom: 24px;
 }
 
 .order-knitting__fieldset {
   border: none;
-  padding: 0 31px;
+  padding: 0 30px;
 }
 
 .order-knitting__fieldset--interior {
@@ -22,11 +22,11 @@
 }
 
 .order-knitting__fieldset--name {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .order-knitting__fieldset--phone {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 }
 
 .order-knitting__fieldset--email {
@@ -34,7 +34,7 @@
 }
 
 .order-knitting__fieldset--addon {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .order-knitting__fieldset-legend {
@@ -46,6 +46,19 @@
   text-transform: uppercase;
 
   display: block;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+    right: 0;
+    top: 8px;
+  }
 }
 
 .order-knitting__fieldset-legend--interior,
@@ -72,10 +85,14 @@
 
 .order-knitting__text-field--phone {
   margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
 }
 
 .order-knitting__text-field--email {
   margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
 }
 
 .order-knitting__fields-list {
@@ -113,6 +130,8 @@
 
 .order-knitting__place-order {
   width: 100%;
+
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -128,11 +147,15 @@
     margin-bottom: 75px;
   }
 
+  .order-knitting__form {
+    margin-left: -4px;
+  }
+
   .order-knitting__fieldset {
     display: flex;
     flex-flow: row nowrap;
 
-    padding: 0 52px;
+    padding: 0 48px 0 52px;
   }
 
   .order-knitting__fieldset-wrapper {
@@ -145,17 +168,21 @@
   }
 
   .order-knitting__fieldset-wrapper--phone-email {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 18px;
   }
 
   .order-knitting__fieldset--phone {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   .order-knitting__fieldset-legend {
     width: 167px;
     flex-shrink: 0;
+
+    &::after {
+      content: none;
+    }
   }
 
   .order-knitting__fieldset-legend--name {
@@ -164,7 +191,7 @@
 
   .order-knitting__fieldset--name {
     padding-top: 51px;
-    padding-bottom: 14px;
+    padding-bottom: 19px;
   }
 
   .order-knitting__fieldset--addon {
@@ -198,11 +225,12 @@
   }
 
   .order-knitting__fields-item--name {
-    margin-bottom: 4px;
+    margin-bottom: 1px;
   }
 
   .order-knitting__fields-list--name {
     flex-grow: 1;
+    margin-top: -4px;
   }
 
   .order-knitting__label {
@@ -224,7 +252,8 @@
 
   .order-knitting__text-field--phone,
   .order-knitting__text-field--email {
-    margin-left: 0;
+    margin-left: auto;
+    width: 500px;
   }
 
   .order-knitting__requied-order-wrapper {
@@ -251,7 +280,7 @@
   .order-knitting__text {
     padding: 0 225px;
 
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .order-knitting__fieldset {
@@ -259,8 +288,12 @@
     padding-right: 114px;
   }
 
+  .order-knitting__fieldset--interior {
+    margin-bottom: 12px;
+  }
+
   .order-knitting__fieldset-legend {
-    width: 111px;
+    width: 114px;
   }
 
   .order-knitting__fields-item--color {

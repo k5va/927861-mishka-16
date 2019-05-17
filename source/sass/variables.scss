@@ -1,9 +1,14 @@
-$main-font: "opensans", sans-serif;
-$bold-font: "opensans", sans-serif;
+//fonts
+$main-font: "opensans", "Arial", sans-serif;
+//colors
 $body-background-color: #ffffff;
 $page-blocks-background-color: #f1f1f1;
+$link-color: #46c1ae;
+//sizes
 $mobile-width: 320px;
-$tablet-width: 772px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
 $desktop-width: 1150px;
+//retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body class="page-body">
     <!-- SVG sprite -->
@@ -17,7 +19,7 @@
     <include src="source/templates/header.html"></include>
     <!-- Main -->
     <main class="page-main">
-      <h1 class="page-main__header">Каталог товаров</h1>
+      <h1 class="page-main__header page-main__header--catalog">Каталог товаров</h1>
       <section class="catalog main-container">
         <h2 class="visually-hidden">Список товаров в каталоге</h2>
         <ul class="catalog__list">
@@ -25,14 +27,14 @@
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 772px)"
+              <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
                 srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-              <source media="(min-width: 772px)"
+              <source media="(min-width: 768px)"
                 srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
               <img class="catalog_image" src="img/photo-hare-mobile@1x.jpg"
                 srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
@@ -41,8 +43,11 @@
             <p class="catalog__description">Рост 30 см, вес 200 г</p>
             <div class="catalog__price-cart-wrapper">
               <p class="catalog__price">1 200 руб.</p>
-              <a class="catalog__add-to-cart" href="#">
-                <img src="img/icon-cart.svg" width="20" height="19" alt="Добавить в корзину">
+              <a class="catalog__add-to-cart" href="#" aria-label="Добавить в корзину">
+                <svg aria-hidden="true" role="presentation"
+                  width="20.294" height="18.849">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
               </a>
             </div>
           </li>
@@ -50,14 +55,14 @@
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 772px)"
+              <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
                 srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-              <source media="(min-width: 772px)"
+              <source media="(min-width: 768px)"
                 srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
               <img class="catalog_image" src="img/photo-bowl-mobile@1x.jpg"
                 srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
@@ -66,8 +71,11 @@
             <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__price-cart-wrapper">
               <p class="catalog__price">690 руб.</p>
-              <a class="catalog__add-to-cart" href="#">
-                <img src="img/icon-cart.svg" width="20" height="19" alt="Добавить в корзину">
+              <a class="catalog__add-to-cart" href="#" aria-label="Добавить в корзину">
+                <svg aria-hidden="true" role="presentation"
+                  width="20.294" height="18.849">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
               </a>
             </div>
           </li>
@@ -75,14 +83,14 @@
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                 srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 772px)"
+              <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
                 srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-              <source media="(min-width: 772px)"
+              <source media="(min-width: 768px)"
                 srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
               <img class="catalog_image" src="img/photo-toys-mobile@1x.jpg"
                 srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
@@ -91,8 +99,11 @@
             <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__price-cart-wrapper">
               <p class="catalog__price">1 500 руб.</p>
-              <a class="catalog__add-to-cart" href="#">
-                <img src="img/icon-cart.svg" width="20" height="19" alt="Добавить в корзину">
+              <a class="catalog__add-to-cart" href="#" aria-label="Добавить в корзину">
+                <svg aria-hidden="true" role="presentation"
+                  width="20.294" height="18.849">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
               </a>
             </div>
           </li>
@@ -101,14 +112,22 @@
       <section class="production-process main-container">
         <div class="production-process__wrapper">
           <h2 class="production-process__header">Процесс производства</h2>
-          <picture>
-            <source media="(min-width: 1150px)"
-              srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 772px)"
-              srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="production-process__video" src="img/video-mobile@1x.jpg"
-              srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
-          </picture>
+          <div class="production-process__video">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg"
+                srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+            </picture>
+          </div>
+          <button class="production-process__video-button" type="button" aria-label="Запустить видео">
+            <svg aria-hidden="true" role="presentation"
+              width="101" height="77">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
           <p class="production-process__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
@@ -118,5 +137,7 @@
     </main>
     <!-- Footer -->
     <include src="source/templates/footer.html"></include>
+    <!-- JS -->
+    <script src="js/app.js"></script>
   </body>
 </html>
