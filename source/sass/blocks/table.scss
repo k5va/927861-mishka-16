@@ -1,0 +1,34 @@
+.table__field {
+  vertical-align: top;
+  padding: 0 0 28px 0;
+}
+
+.table__value {
+  vertical-align: top;
+  width: 213px;
+}
+
+@media (min-width: $tablet-width) {
+  .table__value--email {
+    padding-left: 20px;
+  }
+
+  .table__value--address {
+    padding-left: 22px;
+    width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table__value--email {
+    padding-left: 22px;
+  }
+
+  .table__value--address {
+    padding-left: 24px;
+  }
+
+  .table__field {
+    padding-bottom: 25px;
+  }
+}

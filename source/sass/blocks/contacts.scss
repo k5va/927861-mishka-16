@@ -26,17 +26,6 @@
   margin-left: 28px;
 }
 
-/*TODO: move to table block*/
-.table__field {
-  vertical-align: top;
-  padding: 0 0 28px 0;
-}
-
-.table__value {
-  vertical-align: top;
-  width: 213px;
-}
-
 .contacts__email {
   text-decoration: none;
   color: inherit;
@@ -120,15 +109,6 @@
     margin-bottom: 54px;
   }
 
-  .table__value--email {
-    padding-left: 20px;
-  }
-
-  .table__value--address {
-    padding-left: 22px;
-    width: 292px;
-  }
-
   .contacts__write-us {
     padding-right: 39px;
     padding-left: 39px;
@@ -193,17 +173,5 @@
 
   .contacts__write-us {
     margin-left: -10px;
-  }
-
-  .table__value--email {
-    padding-left: 22px;
-  }
-
-  .table__value--address {
-    padding-left: 24px;
-  }
-
-  .table__field {
-    padding-bottom: 25px;
   }
 }
