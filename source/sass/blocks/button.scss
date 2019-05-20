@@ -10,7 +10,7 @@
 
   background-color: transparent;
   border: 2px solid #444444;
-  padding: 13px 0 16px 0;
+  padding: 15px 0 16px 0;
 
   cursor: pointer;
   outline: none;
@@ -25,4 +25,12 @@
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
 }
